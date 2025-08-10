@@ -341,6 +341,77 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="doc-categories">
+                            <h3>Browse by Category</h3>
+                            <div class="category-list">
+                                <a href="#" class="category-item" onclick="filterDocs('sic-mosfet')">
+                                    <div class="category-icon">⚡</div>
+                                    <div class="category-info">
+                                        <div class="category-name">SiC MOSFETs</div>
+                                        <div class="category-count">45 documents</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="category-item" onclick="filterDocs('igbt')">
+                                    <div class="category-icon">🔌</div>
+                                    <div class="category-info">
+                                        <div class="category-name">IGBT Modules</div>
+                                        <div class="category-count">32 documents</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="category-item" onclick="filterDocs('gate-driver')">
+                                    <div class="category-icon">🎛️</div>
+                                    <div class="category-info">
+                                        <div class="category-name">Gate Drivers</div>
+                                        <div class="category-count">28 documents</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="category-item" onclick="filterDocs('sensors')">
+                                    <div class="category-icon">📡</div>
+                                    <div class="category-info">
+                                        <div class="category-name">Smart Sensors</div>
+                                        <div class="category-count">25 documents</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="documentation-tools">
+                            <h3>Documentation Tools</h3>
+                            <div class="tool-list">
+                                <div class="tool-item">
+                                    <div class="tool-icon">🔄</div>
+                                    <div class="tool-info">
+                                        <div class="tool-name">Version Compare</div>
+                                        <div class="tool-desc">Compare different document versions</div>
+                                    </div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-icon">📑</div>
+                                    <div class="tool-info">
+                                        <div class="tool-name">Batch Download</div>
+                                        <div class="tool-desc">Download multiple documents at once</div>
+                                    </div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-icon">🔔</div>
+                                    <div class="tool-info">
+                                        <div class="tool-name">Update Notifications</div>
+                                        <div class="tool-desc">Get notified of new releases</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="language-selector">
+                            <h3>Available Languages</h3>
+                            <div class="language-options">
+                                <button class="lang-btn active">🇺🇸 English</button>
+                                <button class="lang-btn">🇨🇳 中文</button>
+                                <button class="lang-btn">🇯🇵 日本語</button>
+                                <button class="lang-btn">🇩🇪 Deutsch</button>
+                            </div>
+                        </div>
                     </aside>
                 </div>
             </div>
@@ -501,7 +572,7 @@
         
         .content-layout {
             display: grid;
-            grid-template-columns: 65% 35%;
+            grid-template-columns: 1.5fr 1fr;
             gap: 3rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -806,6 +877,127 @@
             font-size: 0.85rem;
             color: #666;
             font-weight: 500;
+        }
+
+        /* Enhanced Sidebar Components */
+        .doc-categories, .documentation-tools, .language-selector {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+            transition: all 0.3s ease;
+        }
+
+        .doc-categories:hover, .documentation-tools:hover, .language-selector:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+
+        .category-list {
+            margin-top: 1rem;
+        }
+
+        .category-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(145deg, #f0f8ff 0%, #e6f3ff 100%);
+            border-radius: 10px;
+            margin-bottom: 0.75rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .category-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .category-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .category-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .category-count {
+            font-size: 0.8rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .tool-list {
+            margin-top: 1rem;
+        }
+
+        .tool-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            margin-bottom: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .tool-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .tool-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .tool-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .tool-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .language-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .lang-btn {
+            padding: 0.75rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            background: #fff;
+            color: #333;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            border-color: #667eea;
+            background: #f0f8ff;
+        }
+
+        .lang-btn.active {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
         }
     </style>
 </body>
