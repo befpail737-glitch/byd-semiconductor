@@ -1,0 +1,180 @@
+Website Development Plan: Building a Leading "BYD Semiconductor Distributor" Website
+1. Foundational SEO (Search Engine Optimization)
+URL Structure: Implement static, clear URLs across the entire site. For example: www.your-domain.com/products/mcu/bs32f103.html.
+Breadcrumbs: All internal pages must include breadcrumb navigation. Example structure: Home > Products > Smart Control ICs > BS32F103.
+Sitemap: Generate and submit an sitemap.xml file to major search engines (like Google Search Console), including all important pages.
+Meta Tags: Optimize the Title, Description, and Keywords for every page on the site.
+Image Optimization: All <img> tags must include a descriptive alt attribute that describes the image content and naturally incorporates relevant keywords. For example: <img src="byd-igbt-module.jpg" alt="BYD Semiconductor automotive-grade IGBT power module">.
+Keyword Mapping:
+Core Keywords: BYD semiconductor distributor, BYD semiconductor supplier, Official BYD Semiconductor distributor
+Secondary/Long-Tail Keywords:
+Geo-Targeted: BYD semiconductor distributor USA, BYD semiconductor supplier Europe
+Product-Specific: BYD IGBT distributor, BYD automotive MCU supplier, BYD SiC module distributor
+Qualification-Based: Authorized BYD semiconductor distributor, Tier-1 BYD semiconductor supplier
+Question-Based: How to choose BYD MCU, List of BYD semiconductor distributors, BYD semiconductor official distributor search
+Keyword Placement:
+Homepage: Focus on core keywords: BYD semiconductor distributor, BYD semiconductor supplier.
+Product Category Pages: Optimize for Product Category + Distributor, e.g., BYD Power Semiconductor Distributor.
+Product Detail Pages: Optimize for specific part numbers, e.g., BSM1200D12P2C01s supplier.
+Solution Pages: Optimize for Application Area + Solution, e.g., New Energy Vehicle Motor Drive Solution.
+Technical Articles/Blog: Target long-tail, question-based keywords, e.g., BYD MCU Selection Guide.
+2. Homepage Design
+Hero Banner:
+Background: A tech-themed abstract background (SVG format).
+Main Headline (H1): Core Distributor for BYD Semiconductor - Powering the Future of Automotive & Industry
+Sub-headline: Officially authorized, genuine parts guaranteed. We provide comprehensive support from selection to mass production.
+CTA Buttons: Get a Quote, Request Samples
+Why Choose Us: Use icons and short text to highlight four key advantages:
+Official Authorization: 100% genuine and traceable parts.
+Vast Inventory: Large stock of popular models for fast delivery.
+Expert FAE Team: Senior engineers offering free technical support.
+Competitive Pricing: Tier-1 distributor channel ensuring advantageous prices.
+Core Product Areas: Display as graphic cards, each with an SVG icon and category name, linking to the respective category page.
+Power Semiconductors (IGBT, SiC, IPM)
+Smart Control ICs (Automotive MCU, Industrial MCU)
+Smart Sensors (Current Sensors, CMOS Image Sensors)
+Optoelectronic Semiconductors (LED Lighting)
+Solutions & Applications: Use a tabbed interface to showcase capabilities, with a focus on automotive.
+New Energy Vehicles: Motor Drive Systems, BMS, In-Car Air Conditioning, OBC/DCDC
+Industrial Control: Inverters, Servo Drives, Industrial Power Supplies
+PV & Energy Storage: Photovoltaic Inverters, Energy Storage Systems
+Smart Home Appliances: Inverter Air Conditioners, Refrigerators, Washing Machines
+Latest News: A two-column layout: "Company News" on the left, "Industry Insights" on the right.
+Final Call-to-Action (CTA): Ready to start your next project? Contact our experts today to get your BYD Semiconductor solution. -> Contact Us button.
+3. Rich Content Page Creation
+Create professional, visually appealing, and content-rich pages for product listings/details, news listings/details, technical support, and solutions.
+4. Content is King: Building Professional Content
+Product Center
+Product List Page (Example: "Smart Control ICs"):
+Descriptive Content: Below the H1 title, add an original description:
+"As a core product line of BYD Semiconductor, our Smart Control ICs are engineered to meet the stringent demands of industrial and automotive-grade applications. Our portfolio includes high-performance 32-bit automotive MCUs and general-purpose industrial MCUs. In particular, their automotive-grade MCUs are widely used in vehicle body control, thermal management, and lighting systems, renowned for high reliability and integration. As an authorized BYD Semiconductor distributor, we support you through the entire process, from 'BYD MCU selection' to programming."
+Selection Guide Entry: Below the description, place a prominent link: >> Click Here for "How to Choose the Right BYD MCU for Your Automotive Project"
+Visual Categories: Use graphic cards to showcase sub-categories like "Automotive MCUs" and "Industrial MCUs," guiding users to more specific lists.
+Product Detail Pages (5 Examples):
+Article 1: BYD Automotive IGBT Module BSM1200D12P2C01s Detail Page
+URL: /products/power/igbt-module/BSM1200D12P2C01s.html
+Image: byd-igbt-bsm1200d12p2c01s.jpg (High-resolution product image)
+Distributor's Review: "This 1200V/1200A IGBT module is a star product from BYD for NEV main inverters. Our FAE team has validated its exceptional short-circuit withstand capability and extremely low switching losses in multiple projects with leading automakers. It's an ideal choice for electric drive systems pursuing high power density and reliability."
+Alternative & Companion Parts:
+Recommended Gate Driver IC: BIM300
+Similar Competitor Reference: Infineon FF1200R12IE4 (For reference only, to highlight own advantages)
+FAQ Module:
+What is the maximum junction temperature for this IGBT? (A: 175°C)
+What are the package type and dimensions of this module?
+Can you provide a reference design for a gate driver circuit for this module?
+Product Schema.org: (JSON-LD format)
+code
+Json
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "BYD Semiconductor IGBT Module BSM1200D12P2C01s",
+  "image": "https://www.your-domain.com/assets/images/products/byd-igbt-bsm1200d12p2c01s.jpg",
+  "description": "A high-performance 1200V automotive-grade IGBT power module suitable for new energy vehicle main inverters.",
+  "sku": "BSM1200D12P2C01s",
+  "brand": {
+    "@type": "Brand",
+    "name": "BYD Semiconductor"
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "USD"
+  }
+}
+Multiple CTAs:
+[Button] Download Datasheet
+[Button] Request Sample
+[Button] Get a Quote
+[Link] Ask a Technical Question
+Article 2: BYD 32-bit Automotive MCU BS32F103VGT7 Detail Page
+Article 3: BYD 1200V SiC MOSFET BMS1D20120P3 Detail Page
+Article 4: BYD Intelligent Power Module (IPM) BIM50S65T Detail Page
+Article 5: BYD Automotive Current Sensor BCS05S01 Detail Page
+(The 4 pages above will be written following the same structure and depth as Article 1, replacing content with the corresponding product's parameters, reviews, and FAQs.)
+Technical Support / Blog
+Structure: Create categories: "Selection Guides," "Application Notes," and "Troubleshooting." Use a "Tag Cloud" to aggregate content.
+Author Bios: Create author pages for FAEs with their photos and expertise, linking from their articles to demonstrate E-A-T (Expertise, Authoritativeness, Trustworthiness).
+Contextual Links / Related Articles: Seamlessly link to product pages and other relevant articles within the content.
+Technical Support Articles (5 Examples):
+Article 1: Selection Guide - "How to Choose the Right BYD MCU for Your Automotive Project"
+URL: /support/guides/how-to-select-byd-automotive-mcu.html
+Content: A deep dive into BYD's automotive MCU series. Compare features like core (ARM Cortex-M3/M4), frequency, Flash/RAM size, and peripherals (CAN/LIN, ADC, Timers). Provide a selection matrix chart. Explain which series is best for specific applications like body control, thermal management, or lighting.
+Article 2: Application Note - "Key Design Considerations for an 800V On-Board Charger (OBC) Using BYD SiC Modules"
+Article 3: Troubleshooting - "Common Issues and Solutions for BYD IGBT Gate Driver Circuits"
+Article 4: Product Review - "In-depth Analysis: The Energy Efficiency of BYD's Latest IPM in Inverter Air Conditioners"
+Article 5: Tech Deep Dive - "An Explanation of BYD Semiconductor's Trench Field Stop Technology and its Advantages"
+(The 4 articles above will be written to a professional blog standard, including clear structures, diagrams, code snippets (if applicable), and conclusions.)
+Solutions
+Structure: Unique URLs, list page with summaries. Detail pages to include "Block Diagram," "Key Advantages," "Recommended Bill of Materials (BOM)," and "Application Scenarios."
+Solution Articles (5 Examples):
+Article 1: New Energy Vehicle Main Motor Drive Inverter Solution
+URL: /solutions/automotive/motor-drive-inverter.html
+Block Diagram: solution-motor-drive-block-diagram.svg, clearly labeling the main MCU, pre-driver, IGBT module, current sensor, and power supply ICs.
+Key Advantages: Showcase the high integration, efficiency, and cost benefits of using a BYD chipset (MCU + IGBT + Sensor).
+Recommended Bill of Materials (BOM):
+Power Module: BSM1200D12P2C01s (Link to product page)
+Main MCU: A specific model from the BS32F series (Link to product page)
+Current Sensor: A model from the BCS series (Link to product page)
+Isolated Driver: BIM300 (Link to product page)
+Application Scenarios: Suitable for main motor controllers in Class A/B/C passenger cars and electric SUVs.
+Article 2: New Energy Vehicle Battery Management System (BMS) Solution
+Article 3: High-Power Industrial Inverter Solution
+Article 4: Photovoltaic (PV) Inverter Solution
+Article 5: Smart Home Inverter Air Conditioner Solution
+(The 4 solutions above will be created following the structure of Article 1, providing professional graphics, text, and internal links.)
+News Center
+Structure: Separate into "Company News" and "Industry Insights" sections. Use the NewsArticle Schema markup for "Industry Insights" posts.
+News Articles (5 Examples):
+Company News: "Announcing Our Award as 'BYD Semiconductor's 2025 Distributor of the Year'"
+Company News: "Recap: Our Successful Technical Seminar on 'Empowering Industrial Automation with BYD Semiconductor'"
+Industry Insights: "Analysis: Market Trends and Opportunities for Automotive-Grade SiC Power Devices in 2025"
+Industry Insights: "The Rise of Domestic Automotive MCUs: A Look at the Path Forward and Future Challenges"
+Industry Insights: "BYD Semiconductor Unveils New-Gen IGBT to Boost NEV Efficiency"
+About Us
+Detail the company's history (e.g., Core-Tek), official credentials as a Tier-1 BYD distributor, the professional background of the FAE team, and key customer success stories (can be anonymized, e.g., "A leading NEV manufacturer in China").
+5. Strengthen Internal Linking
+Strictly enforce a contextual linking strategy. In all content pages (products, blogs, solutions), any mention of a specific part number must link to its detail page.
+At the end of detail pages, implement "Related Products" and "Related Articles" modules for intelligent recommendations.
+6. Vector Graphics (SVG) & Visual Design
+Logo: logo.svg - Design a simple, professional logo for your company.
+Product Category Icons: icon-power-semi.svg, icon-mcu.svg, icon-sensor.svg - A unified set of icons.
+Page Illustrations: illustration-news.svg, illustration-about-us.svg, illustration-contact.svg - For use as cover images or illustrations.
+Abstract Backgrounds: bg-hero-banner.svg, bg-section-pattern.svg - Tech-themed patterns like circuit board traces or lines.
+Image URL Examples:
+Product Image: /assets/images/products/bs32f103vgt7.jpg
+Solution Diagram: /assets/images/solutions/solution-bms-block-diagram.svg
+Blog Graphic: /assets/images/blog/how-to-select-mcu-chart.png
+7. Global Meta Information Template
+Title: BYD Semiconductor Distributor_Authorized Tier-1 Supplier_YourCompanyName
+Description: YourCompanyName is an officially authorized Tier-1 distributor for BYD Semiconductor, providing a stable supply of the full range of MCUs, IGBTs, MOSFETs, and sensors. We offer genuine parts, expert technical support, and competitive pricing. Contact us for a quote.
+Keywords: BYD semiconductor distributor, BYD semiconductor supplier, BYD Semiconductor
+8. Responsive Design
+The website must use a responsive layout to ensure a perfect viewing experience on all devices, including desktops, tablets, and mobile phones.
+9. Backend Management System (CMS)
+Provide a fully functional backend Content Management System with a database.
+Administrators must be able to easily upload and edit all content, including products, articles, and solutions.
+Login Credentials:
+Username: admin
+Password: 123456 (A more secure password is recommended for production)
+10. Site Architecture
+Homepage (/)
+Products (/products/)
+Power Semiconductors (/products/power-semiconductors/)
+Smart Control ICs (/products/smart-control-ics/)
+... (Detail Pages)
+Solutions (/solutions/)
+New Energy Vehicles (/solutions/automotive/)
+Industrial Control (/solutions/industrial/)
+... (Detail Pages)
+Technical Support (/support/)
+Selection Guides (/support/guides/)
+Application Notes (/support/app-notes/)
+... (Detail Pages)
+News (/news/)
+Company News (/news/company/)
+Industry Insights (/news/industry/)
+... (Detail Pages)
+FAQ (/faq/)
+About Us (/about-us/)
+Contact Us (/contact-us/)
