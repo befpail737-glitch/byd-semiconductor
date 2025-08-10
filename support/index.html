@@ -179,20 +179,29 @@
         
         .support-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
         }
         
         .support-card {
             background: #fff;
             border: 1px solid #e9ecef;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
             text-align: center;
             display: flex;
             flex-direction: column;
             height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .support-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.18);
         }
         
         .support-icon {
@@ -201,21 +210,36 @@
         
         .support-card h3 {
             color: #0066cc;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .support-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
         }
         
         .support-card ul {
             list-style: none;
             padding: 0;
-            margin: 1rem 0;
+            margin: 1.5rem 0 2rem 0;
             text-align: left;
             flex-grow: 1;
         }
         
         .support-card li {
-            padding: 0.25rem 0;
-            padding-left: 1rem;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
             position: relative;
+            color: #555;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .support-card li:last-child {
+            border-bottom: none;
         }
         
         .support-card li:before {
@@ -224,11 +248,21 @@
             font-weight: bold;
             position: absolute;
             left: 0;
+            top: 0.5rem;
         }
         
         .support-card .btn {
             margin-top: auto;
             align-self: center;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .support-card .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.3);
         }
         
         .support-contact {
