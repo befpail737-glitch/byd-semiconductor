@@ -50,7 +50,8 @@
 
         <section class="article-content">
             <div class="container">
-                <div class="article-body">
+                <div class="article-layout">
+                    <div class="article-body">
                     <p class="lead">BYD Semiconductor has announced the launch of its next-generation Silicon Carbide (SiC) MOSFET series, specifically designed for electric vehicle applications. The new BSC series offers significant improvements in efficiency, thermal performance, and switching characteristics compared to previous generations.</p>
 
                     <p>The new product line includes both 650V and 1200V variants, targeting key EV applications including traction inverters, on-board chargers, DC-DC converters, and charging infrastructure. These devices represent a major advancement in SiC technology, offering automotive customers enhanced performance and reliability.</p>
@@ -292,9 +293,9 @@
                             <li><strong>Applications Support:</strong> <a href="/support/">Technical Support Center</a></li>
                         </ul>
                     </div>
-                </div>
+                    </div>
 
-                <aside class="article-sidebar">
+                    <aside class="article-sidebar">
                     <div class="product-highlights">
                         <h3>Key Advantages</h3>
                         <ul class="highlight-list">
@@ -322,6 +323,7 @@
                         </div>
                     </div>
                 </aside>
+                </div>
             </div>
         </section>
     </main>
@@ -352,5 +354,313 @@
             </div>
         </div>
     </footer>
+
+    <style>
+        .article-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 3rem 0 2rem;
+        }
+        
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .article-content {
+            padding: 4rem 0;
+        }
+        
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .article-body {
+            background: #fff;
+            line-height: 1.7;
+        }
+        
+        .article-body .lead {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .article-body h2 {
+            color: #0066cc;
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .article-body h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .article-body h4 {
+            color: #0066cc;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        .article-body p {
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+        
+        .article-body ul, .article-body ol {
+            margin: 1rem 0 1.5rem 2rem;
+            color: #444;
+        }
+        
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .feature-item h4 {
+            color: #0066cc;
+            margin: 0 0 0.75rem 0;
+        }
+        
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .spec-table th,
+        .spec-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .spec-table th {
+            background: #0066cc;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .spec-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .performance-benefits,
+        .application-examples {
+            margin: 2rem 0;
+        }
+        
+        .benefit-comparison,
+        .example-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+        }
+        
+        .comparison-item h4,
+        .example-card h4 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .article-body blockquote {
+            background: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .article-body blockquote cite {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 600;
+            color: #0066cc;
+        }
+        
+        .article-footer {
+            background: #e8f4f8;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0 0 0;
+        }
+        
+        .article-footer h3 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .pricing-info {
+            background: #f0f7ff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #0066cc;
+        }
+        
+        .pricing-info h3 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .article-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .product-highlights,
+        .related-products {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 2rem;
+        }
+        
+        .product-highlights h3,
+        .related-products h3 {
+            color: #0066cc;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .highlight-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .highlight-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+            color: #333;
+        }
+        
+        .highlight-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .product-link {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .product-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .product-link h4 {
+            color: #0066cc;
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+        }
+        
+        .product-link p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .article-sidebar {
+                order: -1;
+            }
+            
+            .product-highlights,
+            .related-products {
+                position: static;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .article-header {
+                padding: 2rem 0 1.5rem;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .article-body {
+                font-size: 0.95rem;
+            }
+            
+            .spec-table {
+                font-size: 0.85rem;
+            }
+            
+            .spec-table th,
+            .spec-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
 </body>
 </html>

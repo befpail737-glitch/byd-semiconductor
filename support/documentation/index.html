@@ -54,11 +54,13 @@
             </div>
         </section>
 
-        <section class="documentation-grid">
+        <section class="documentation-content">
             <div class="container">
-                <h2>Product Documentation</h2>
-                
-                <div class="doc-categories">
+                <div class="content-layout">
+                    <div class="main-content">
+                        <h2>Product Documentation</h2>
+                        
+                        <div class="doc-categories">
                     <div class="doc-category">
                         <h3>Power Semiconductors</h3>
                         <div class="doc-list">
@@ -238,6 +240,52 @@
                             </div>
                         </div>
                     </div>
+
+                    <aside class="sidebar">
+                        <div class="support-contact">
+                            <h3>Need Help?</h3>
+                            <p>Can't find the documentation you need?</p>
+                            <div class="contact-options">
+                                <a href="/contact-us/" class="contact-btn">
+                                    📧 Contact FAE Team
+                                </a>
+                                <a href="mailto:docs@litong-group.com" class="contact-btn">
+                                    📝 Request Document
+                                </a>
+                                <a href="/support/" class="contact-btn">
+                                    🎓 Technical Training
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="quick-links">
+                            <h3>Quick Access</h3>
+                            <ul>
+                                <li><a href="#" onclick="downloadAll('datasheets')">📄 All Datasheets (ZIP)</a></li>
+                                <li><a href="#" onclick="downloadAll('appnotes')">📚 All App Notes (ZIP)</a></li>
+                                <li><a href="/products/">🔍 Product Selector Tool</a></li>
+                                <li><a href="/solutions/">💡 Solution Examples</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="recent-updates">
+                            <h3>Recent Updates</h3>
+                            <div class="update-list">
+                                <div class="update-item">
+                                    <strong>Jan 8, 2025</strong>
+                                    <p>New SiC MOSFET datasheets added</p>
+                                </div>
+                                <div class="update-item">
+                                    <strong>Dec 15, 2024</strong>
+                                    <p>Updated thermal management app note</p>
+                                </div>
+                                <div class="update-item">
+                                    <strong>Nov 20, 2024</strong>
+                                    <p>New user guide for Developer Studio 2.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -389,5 +437,235 @@
             });
         });
     </script>
+
+    <style>
+        .documentation-content {
+            padding: 4rem 0;
+        }
+        
+        .content-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .main-content {
+            background: #fff;
+            border-radius: 12px;
+            padding: 0;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .support-contact, .quick-links, .recent-updates {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .support-contact h3, .quick-links h3, .recent-updates h3 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-btn {
+            background: #fff;
+            color: #0066cc;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border: 1px solid #0066cc;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .contact-btn:hover {
+            background: #0066cc;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.3);
+        }
+        
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .quick-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .quick-links a {
+            color: #0066cc;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-links a:hover {
+            background: #f0f7ff;
+            padding-left: 0.5rem;
+            border-left: 3px solid #0066cc;
+        }
+        
+        .update-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .update-item {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .update-item:last-child {
+            border-bottom: none;
+        }
+        
+        .update-item strong {
+            color: #0066cc;
+            font-size: 0.9rem;
+        }
+        
+        .update-item p {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .doc-categories {
+            margin-top: 0;
+        }
+        
+        .doc-category {
+            margin-bottom: 3rem;
+        }
+        
+        .doc-category h3 {
+            color: #0066cc;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .doc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .doc-item {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .doc-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .doc-icon {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+        }
+        
+        .doc-info {
+            flex: 1;
+        }
+        
+        .doc-info h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .doc-info p {
+            color: #666;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+        
+        .doc-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #999;
+        }
+        
+        .doc-meta span {
+            background: #f0f0f0;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .doc-actions {
+            flex-shrink: 0;
+        }
+        
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .content-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .doc-item {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+            
+            .doc-info {
+                width: 100%;
+            }
+            
+            .contact-options {
+                gap: 0.75rem;
+            }
+            
+            .contact-btn {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </body>
 </html>
