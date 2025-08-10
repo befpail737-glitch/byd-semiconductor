@@ -568,32 +568,219 @@
                         </div>
                         
                         <aside class="sidebar">
+                            <div class="sidebar-widget selection-helper">
+                                <h3>🎯 Quick MCU Selector</h3>
+                                <div class="selector-tool">
+                                    <p><strong>Find your ideal MCU:</strong></p>
+                                    <div class="selector-options">
+                                        <div class="option-group">
+                                            <label>Application Type:</label>
+                                            <select class="selector-dropdown">
+                                                <option>Body Control</option>
+                                                <option>HVAC System</option>
+                                                <option>Motor Control</option>
+                                                <option>Gateway</option>
+                                                <option>Telematics</option>
+                                            </select>
+                                        </div>
+                                        <div class="option-group">
+                                            <label>Performance Level:</label>
+                                            <select class="selector-dropdown">
+                                                <option>Basic (≤72MHz)</option>
+                                                <option>Advanced (72-120MHz)</option>
+                                                <option>High (≥120MHz)</option>
+                                            </select>
+                                        </div>
+                                        <button class="find-mcu-btn">Find Recommended MCU</button>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="sidebar-widget">
-                                <h3>Quick Links</h3>
+                                <h3>📊 Key Specifications</h3>
+                                <div class="spec-comparison">
+                                    <div class="spec-row">
+                                        <span class="spec-label">CPU Cores:</span>
+                                        <span class="spec-value">Cortex-M3/M4F/M7</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Frequency:</span>
+                                        <span class="spec-value">48MHz - 400MHz</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Flash Memory:</span>
+                                        <span class="spec-value">32KB - 8MB</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Temperature:</span>
+                                        <span class="spec-value">-40°C to +150°C</span>
+                                    </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label">Safety Level:</span>
+                                        <span class="spec-value">ASIL-A to ASIL-D</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="sidebar-widget">
+                                <h3>🏆 Popular MCUs</h3>
+                                <div class="popular-mcus">
+                                    <div class="mcu-item">
+                                        <div class="mcu-name">BS32F103VGT7</div>
+                                        <div class="mcu-desc">Best for Body Control</div>
+                                        <div class="mcu-stats">
+                                            <span class="stat">⚡ 72MHz</span>
+                                            <span class="stat">💾 256KB</span>
+                                        </div>
+                                    </div>
+                                    <div class="mcu-item">
+                                        <div class="mcu-name">BS32F205RCT6</div>
+                                        <div class="mcu-desc">Ideal for Motor Control</div>
+                                        <div class="mcu-stats">
+                                            <span class="stat">⚡ 120MHz</span>
+                                            <span class="stat">💾 256KB</span>
+                                        </div>
+                                    </div>
+                                    <div class="mcu-item">
+                                        <div class="mcu-name">BS32F407VGT6</div>
+                                        <div class="mcu-desc">Perfect for Gateway</div>
+                                        <div class="mcu-stats">
+                                            <span class="stat">⚡ 180MHz</span>
+                                            <span class="stat">💾 512KB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h3>⚡ Performance Calculator</h3>
+                                <div class="performance-calc">
+                                    <div class="calc-input">
+                                        <label>Required DMIPS:</label>
+                                        <input type="number" placeholder="e.g., 100" class="calc-field">
+                                    </div>
+                                    <div class="calc-input">
+                                        <label>Flash Usage (%):</label>
+                                        <input type="range" min="0" max="100" value="70" class="calc-slider">
+                                        <span class="slider-value">70%</span>
+                                    </div>
+                                    <div class="calc-result">
+                                        <strong>Recommended:</strong>
+                                        <div class="result-mcu">BS32F205 Series</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h3>🔧 Development Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon">💻</div>
+                                        <div class="tool-info">
+                                            <div class="tool-name">BYD Studio IDE</div>
+                                            <div class="tool-desc">Complete development environment</div>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon">🛠️</div>
+                                        <div class="tool-info">
+                                            <div class="tool-name">Evaluation Boards</div>
+                                            <div class="tool-desc">Hardware for rapid prototyping</div>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon">📚</div>
+                                        <div class="tool-info">
+                                            <div class="tool-name">Code Libraries</div>
+                                            <div class="tool-desc">Pre-qualified software components</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="sidebar-widget">
+                                <h3>📖 Quick Links</h3>
                                 <ul>
-                                    <li><a href="/products/smart-control-ics/">BYD MCU Products</a></li>
-                                    <li><a href="/support/development-tools/">Development Tools</a></li>
-                                    <li><a href="/support/app-notes/">Application Notes</a></li>
-                                    <li><a href="/contact-us/">Contact FAE Team</a></li>
+                                    <li><a href="/products/smart-control-ics/">🔗 BYD MCU Products</a></li>
+                                    <li><a href="/support/development-tools/">🔗 Development Tools</a></li>
+                                    <li><a href="/support/app-notes/">🔗 Application Notes</a></li>
+                                    <li><a href="/contact-us/">🔗 Contact FAE Team</a></li>
                                 </ul>
                             </div>
                             
                             <div class="sidebar-widget">
-                                <h3>Related Guides</h3>
-                                <ul>
-                                    <li><a href="/support/guides/automotive-can-implementation.html">CAN Bus Implementation Guide</a></li>
-                                    <li><a href="/support/guides/automotive-power-design.html">Automotive Power Design</a></li>
-                                    <li><a href="/support/guides/emc-compliance-automotive.html">EMC Compliance for Automotive</a></li>
-                                </ul>
+                                <h3>📚 Related Guides</h3>
+                                <div class="guide-list">
+                                    <a href="/support/guides/automotive-can-implementation.html" class="guide-item">
+                                        <div class="guide-icon">🚗</div>
+                                        <div class="guide-info">
+                                            <div class="guide-title">CAN Bus Implementation</div>
+                                            <div class="guide-desc">Complete automotive CAN guide</div>
+                                        </div>
+                                    </a>
+                                    <a href="/support/guides/automotive-power-design.html" class="guide-item">
+                                        <div class="guide-icon">⚡</div>
+                                        <div class="guide-info">
+                                            <div class="guide-title">Power Design Guide</div>
+                                            <div class="guide-desc">Automotive power management</div>
+                                        </div>
+                                    </a>
+                                    <a href="/support/guides/emc-compliance-automotive.html" class="guide-item">
+                                        <div class="guide-icon">🛡️</div>
+                                        <div class="guide-info">
+                                            <div class="guide-title">EMC Compliance</div>
+                                            <div class="guide-desc">Meeting automotive EMC standards</div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             
                             <div class="sidebar-widget">
-                                <h3>Download Resources</h3>
-                                <ul>
-                                    <li><a href="#" onclick="downloadResource('mcu-selection-matrix')">📊 MCU Selection Matrix (PDF)</a></li>
-                                    <li><a href="#" onclick="downloadResource('automotive-mcu-catalog')">📘 Automotive MCU Catalog</a></li>
-                                    <li><a href="#" onclick="downloadResource('development-tools-guide')">🔧 Development Tools Guide</a></li>
-                                </ul>
+                                <h3>💾 Download Resources</h3>
+                                <div class="resource-list">
+                                    <div class="resource-item">
+                                        <div class="resource-icon">📊</div>
+                                        <div class="resource-info">
+                                            <div class="resource-name">MCU Selection Matrix</div>
+                                            <div class="resource-size">2.1 MB PDF</div>
+                                            <button class="download-btn" onclick="downloadResource('mcu-selection-matrix')">Download</button>
+                                        </div>
+                                    </div>
+                                    <div class="resource-item">
+                                        <div class="resource-icon">📘</div>
+                                        <div class="resource-info">
+                                            <div class="resource-name">MCU Catalog</div>
+                                            <div class="resource-size">5.8 MB PDF</div>
+                                            <button class="download-btn" onclick="downloadResource('automotive-mcu-catalog')">Download</button>
+                                        </div>
+                                    </div>
+                                    <div class="resource-item">
+                                        <div class="resource-icon">🔧</div>
+                                        <div class="resource-info">
+                                            <div class="resource-name">Development Tools</div>
+                                            <div class="resource-size">1.5 MB PDF</div>
+                                            <button class="download-btn" onclick="downloadResource('development-tools-guide')">Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget support-contact">
+                                <h3>🤝 Expert Support</h3>
+                                <div class="support-info">
+                                    <div class="support-avatar">
+                                        <img src="/assets/images/team/support-team.jpg" alt="Support Team" width="60" height="60">
+                                    </div>
+                                    <div class="support-details">
+                                        <div class="support-name">Technical Support Team</div>
+                                        <div class="support-desc">Get personalized MCU recommendations</div>
+                                        <div class="support-availability">Available: Mon-Fri 9AM-6PM</div>
+                                    </div>
+                                    <div class="support-actions">
+                                        <a href="/contact-us/" class="support-btn primary">Contact Us</a>
+                                        <a href="mailto:support@litong.com" class="support-btn secondary">Email</a>
+                                    </div>
+                                </div>
                             </div>
                         </aside>
                     </div>
@@ -1146,6 +1333,389 @@
             box-shadow: 0 12px 30px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
         }
         
+        /* Enhanced Sidebar Components */
+        .selection-helper .selector-tool {
+            margin-top: 1rem;
+        }
+        
+        .option-group {
+            margin-bottom: 1rem;
+        }
+        
+        .option-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .selector-dropdown {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            background: #fff;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .selector-dropdown:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .find-mcu-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .find-mcu-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .spec-comparison {
+            margin-top: 1rem;
+        }
+        
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+        
+        .spec-label {
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .spec-value {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 0.9rem;
+        }
+        
+        .popular-mcus {
+            margin-top: 1rem;
+        }
+        
+        .mcu-item {
+            background: linear-gradient(145deg, #f0f8ff 0%, #e6f3ff 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .mcu-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+        }
+        
+        .mcu-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .mcu-desc {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .mcu-stats {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .stat {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .performance-calc {
+            margin-top: 1rem;
+        }
+        
+        .calc-input {
+            margin-bottom: 1rem;
+        }
+        
+        .calc-input label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .calc-field {
+            width: 100%;
+            padding: 0.5rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .calc-field:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .calc-slider {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        
+        .slider-value {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .calc-result {
+            background: linear-gradient(145deg, #f0fff4 0%, #c6f6d5 100%);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .result-mcu {
+            color: #38a169;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        
+        .tool-list {
+            margin-top: 1rem;
+        }
+        
+        .tool-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tool-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .tool-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        
+        .tool-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .guide-list {
+            margin-top: 1rem;
+        }
+        
+        .guide-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .guide-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .guide-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .guide-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        
+        .guide-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .resource-list {
+            margin-top: 1rem;
+        }
+        
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        
+        .resource-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .resource-info {
+            flex: 1;
+        }
+        
+        .resource-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        
+        .resource-size {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        .support-contact {
+            background: linear-gradient(145deg, #f0f8ff 0%, #e6f3ff 100%);
+        }
+        
+        .support-info {
+            margin-top: 1rem;
+        }
+        
+        .support-avatar {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .support-avatar img {
+            border-radius: 50%;
+            border: 3px solid #667eea;
+        }
+        
+        .support-name {
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .support-desc {
+            color: #666;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .support-availability {
+            color: #38a169;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        
+        .support-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .support-btn {
+            padding: 0.75rem;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .support-btn.primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .support-btn.primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .support-btn.secondary {
+            border: 2px solid #667eea;
+            color: #667eea;
+            background: transparent;
+        }
+        
+        .support-btn.secondary:hover {
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+        }
+        
         .sidebar-widget h3 {
             margin-bottom: 1rem;
             color: #333;
@@ -1230,6 +1800,50 @@
                 });
             }
         }
+        
+        // Interactive MCU Selector
+        document.addEventListener('DOMContentLoaded', function() {
+            const findMcuBtn = document.querySelector('.find-mcu-btn');
+            if (findMcuBtn) {
+                findMcuBtn.addEventListener('click', function() {
+                    const appType = document.querySelector('.selector-dropdown:nth-of-type(1)').value;
+                    const perfLevel = document.querySelector('.selector-dropdown:nth-of-type(2)').value;
+                    
+                    let recommendation = '';
+                    if (appType === 'Body Control' && perfLevel === 'Basic (≤72MHz)') {
+                        recommendation = 'BS32F103VGT7 - Perfect for body control with dual CAN';
+                    } else if (appType === 'Motor Control') {
+                        recommendation = 'BS32F205RCT6 - Ideal for motor control with FPU';
+                    } else if (appType === 'Gateway') {
+                        recommendation = 'BS32F407VGT6 - High performance for gateway applications';
+                    } else {
+                        recommendation = 'Please contact our FAE team for personalized recommendations';
+                    }
+                    
+                    alert(`Recommendation: ${recommendation}`);
+                });
+            }
+            
+            // Performance Calculator
+            const slider = document.querySelector('.calc-slider');
+            const sliderValue = document.querySelector('.slider-value');
+            const resultMcu = document.querySelector('.result-mcu');
+            
+            if (slider && sliderValue && resultMcu) {
+                slider.addEventListener('input', function() {
+                    const value = this.value;
+                    sliderValue.textContent = value + '%';
+                    
+                    if (value <= 30) {
+                        resultMcu.textContent = 'BS32F103 Series';
+                    } else if (value <= 70) {
+                        resultMcu.textContent = 'BS32F205 Series';
+                    } else {
+                        resultMcu.textContent = 'BS32F407 Series';
+                    }
+                });
+            }
+        });
     </script>
     <script src="/assets/js/script.js"></script>
 </body>
