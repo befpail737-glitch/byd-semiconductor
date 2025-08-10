@@ -367,6 +367,9 @@ a:hover {
     padding: 2rem;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -405,6 +408,7 @@ a:hover {
 .product-list {
     list-style: none;
     margin-bottom: 1.5rem;
+    flex-grow: 1;
 }
 
 .product-list li {
@@ -420,6 +424,12 @@ a:hover {
     font-weight: bold;
     position: absolute;
     left: 0;
+}
+
+/* Ensure buttons align at bottom of product cards */
+.product-card .btn {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 /* Solutions & Applications */
