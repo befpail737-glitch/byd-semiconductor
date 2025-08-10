@@ -412,9 +412,27 @@
     <style>
         /* Article Header Styles */
         .article-header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #fff;
-            padding: 3rem 0 2rem;
+            padding: 4rem 0 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.08"><polygon points="40,0 80,40 40,80 0,40"/></g></g></svg>');
+            opacity: 0.4;
+        }
+        
+        .article-header .container {
+            position: relative;
+            z-index: 1;
         }
         
         .breadcrumb {
@@ -507,10 +525,24 @@
         
         /* Market Stats Styles */
         .market-stats {
-            background: #f8f9fa;
-            padding: 2.5rem;
-            border-radius: 16px;
-            margin: 2.5rem 0;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            margin: 3rem 0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .market-stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
+            border-radius: 25px 25px 0 0;
         }
         
         .stat-grid {
@@ -521,15 +553,34 @@
         
         .stat-item {
             text-align: center;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
         
         .stat-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+        
+        .stat-item:hover::before {
+            opacity: 1;
         }
         
         .stat-number {
@@ -566,17 +617,36 @@
         }
         
         .factor-card {
-            background: #fff;
-            border: 1px solid #e9ecef;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border: none;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .factor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
         }
         
         .factor-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+        
+        .factor-card:hover::before {
+            transform: scaleX(1);
         }
         
         .factor-card h4 {
@@ -781,12 +851,34 @@
         .market-highlights,
         .related-content,
         .market-resources {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
             position: sticky;
             top: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .market-highlights::before,
+        .related-content::before,
+        .market-resources::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .market-highlights:hover,
+        .related-content:hover,
+        .market-resources:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
         }
         
         .market-highlights h3,

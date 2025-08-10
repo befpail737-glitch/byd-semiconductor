@@ -297,7 +297,7 @@
                                         <h3>1. Performance Requirements</h3>
                                         <div class="performance-guide">
                                             <div class="perf-category">
-                                                <h4>Basic Control (â‰?2MHz)</h4>
+                                                <h4>Basic Control (ï¿½?2MHz)</h4>
                                                 <p><strong>Recommended:</strong> BS32F1xx Series</p>
                                                 <ul>
                                                     <li>Simple I/O control and monitoring</li>
@@ -319,7 +319,7 @@
                                             </div>
                                             
                                             <div class="perf-category">
-                                                <h4>High Performance (â‰?20MHz)</h4>
+                                                <h4>High Performance (ï¿½?20MHz)</h4>
                                                 <p><strong>Recommended:</strong> BS32F4xx Series</p>
                                                 <ul>
                                                     <li>Complex control algorithms</li>
@@ -514,7 +514,7 @@
                                         <ul>
                                             <li>Operating temperature: -40Â°C to +125Â°C (all automotive grades)</li>
                                             <li>AEC-Q100 qualification for automotive use</li>
-                                            <li>ESD protection: HBM â‰?kV, MM â‰?00V</li>
+                                            <li>ESD protection: HBM ï¿½?kV, MM ï¿½?00V</li>
                                             <li>EMC compliance: Designed for automotive EMC requirements</li>
                                         </ul>
                                     </div>
@@ -651,13 +651,32 @@
 
     <style>
         .technical-article {
-            background-color: #fff;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
         }
         
         .article-header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #fff;
-            padding: 3rem 0 2rem;
+            padding: 4rem 0 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><polygon points="36,34 6,34 6,4 36,4"/></g></g></svg>');
+            opacity: 0.3;
+        }
+        
+        .article-header .container {
+            position: relative;
+            z-index: 1;
         }
         
         .article-meta {
@@ -745,10 +764,36 @@
         }
         
         .series-card {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 12px;
-            padding: 2rem;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border: none;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .series-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .series-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+        
+        .series-card:hover::before {
+            transform: scaleX(1);
         }
         
         .series-specs {
@@ -783,7 +828,7 @@
         }
         
         .key-applications li:before {
-            content: 'â†?;
+            content: 'ï¿½?;
             color: #0066cc;
             font-weight: bold;
             position: absolute;
@@ -904,11 +949,34 @@
         }
         
         .example-card {
-            background: #fff;
-            border: 1px solid #e9ecef;
-            border-radius: 12px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border: none;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+        
+        .example-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .example-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+        
+        .example-card:hover::before {
+            opacity: 1;
         }
         
         .example-header {
@@ -1004,12 +1072,32 @@
         }
         
         .cta-box {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #fff;
-            padding: 2rem;
-            border-radius: 12px;
+            padding: 3rem;
+            border-radius: 25px;
             text-align: center;
-            margin: 3rem 0;
+            margin: 4rem 0;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            transform: rotate(30deg);
+            animation: shimmer 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: rotate(30deg) translateX(-100px); }
+            100% { transform: rotate(30deg) translateX(100px); }
         }
         
         .cta-box h3 {
@@ -1032,11 +1120,30 @@
         }
         
         .sidebar-widget {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 1.5rem;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border: none;
+            border-radius: 20px;
+            padding: 2rem;
             margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .sidebar-widget::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .sidebar-widget:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
         }
         
         .sidebar-widget h3 {
