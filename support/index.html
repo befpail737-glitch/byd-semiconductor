@@ -57,6 +57,11 @@
                     </div>
                     
                     <div class="support-card">
+                        <div class="support-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="#0066cc">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            </svg>
+                        </div>
                         <h3>Documentation Library</h3>
                         <p>Comprehensive documentation including datasheets, application notes, and user guides.</p>
                         <ul>
@@ -69,6 +74,11 @@
                     </div>
                     
                     <div class="support-card">
+                        <div class="support-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="#0066cc">
+                                <path d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z"/>
+                            </svg>
+                        </div>
                         <h3>Development Tools</h3>
                         <p>Access to BYD's development ecosystem including IDEs, debuggers, and evaluation boards.</p>
                         <ul>
@@ -81,6 +91,11 @@
                     </div>
                     
                     <div class="support-card">
+                        <div class="support-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="#0066cc">
+                                <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                            </svg>
+                        </div>
                         <h3>Training & Workshops</h3>
                         <p>Regular technical seminars and customized training sessions for your engineering team.</p>
                         <ul>
@@ -116,7 +131,7 @@
                         <h3>üåê Global Network</h3>
                         <p>Local support in 18+ countries worldwide</p>
                         <p>Multilingual technical assistance</p>
-                        <p><a href="/contact-us/">Find your local office ‚Ü?/a></p>
+                        <p><a href="/contact-us/">Find your local office ‚Üí</a></p>
                     </div>
                 </div>
             </div>
@@ -175,6 +190,9 @@
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .support-icon {
@@ -191,6 +209,7 @@
             padding: 0;
             margin: 1rem 0;
             text-align: left;
+            flex-grow: 1;
         }
         
         .support-card li {
@@ -200,11 +219,16 @@
         }
         
         .support-card li:before {
-            content: '‚ú?;
+            content: '‚úì';
             color: #28a745;
             font-weight: bold;
             position: absolute;
             left: 0;
+        }
+        
+        .support-card .btn {
+            margin-top: auto;
+            align-self: center;
         }
         
         .support-contact {
