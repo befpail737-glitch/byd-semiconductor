@@ -1,0 +1,43 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#fff0e6" stroke="#ff6b35" stroke-width="2"/>
+  
+  <!-- Engineer head -->
+  <circle cx="30" cy="22" r="8" fill="#ffc8a2"/>
+  
+  <!-- Hard hat -->
+  <path d="M22 22 Q22 16 30 16 Q38 16 38 22" fill="#ff6b35"/>
+  <rect x="24" y="14" width="12" height="3" fill="#fff"/>
+  
+  <!-- Tools -->
+  <g stroke="#666" stroke-width="2" fill="none">
+    <!-- Screwdriver -->
+    <line x1="15" y1="35" x2="15" y2="45" stroke-linecap="round"/>
+    <rect x="14" y="32" width="2" height="3" fill="#ffc107"/>
+    
+    <!-- Wrench -->
+    <path d="M45 35 L45 42" stroke-linecap="round"/>
+    <circle cx="45" cy="33" r="2" fill="none"/>
+  </g>
+  
+  <!-- Laptop/Technical device -->
+  <rect x="24" y="35" width="12" height="8" rx="1" fill="#333"/>
+  <rect x="25" y="36" width="10" height="6" fill="#0066cc"/>
+  
+  <!-- Circuit pattern on screen -->
+  <g stroke="#fff" stroke-width="0.5" opacity="0.8">
+    <line x1="27" y1="38" x2="33" y2="38"/>
+    <line x1="27" y1="40" x2="33" y2="40"/>
+    <circle cx="29" cy="39" r="0.5" fill="#fff"/>
+    <circle cx="31" cy="39" r="0.5" fill="#fff"/>
+  </g>
+  
+  <!-- Speech bubble with technical symbols -->
+  <ellipse cx="42" cy="25" rx="8" ry="5" fill="#fff" stroke="#ccc"/>
+  <polygon points="36,27 34,30 38,28" fill="#fff"/>
+  <text x="42" y="27" text-anchor="middle" font-size="6" fill="#0066cc">PCB</text>
+  
+  <!-- Knowledge/expertise indicator -->
+  <circle cx="12" cy="15" r="5" fill="#28a745"/>
+  <text x="12" y="18" text-anchor="middle" font-size="6" fill="#fff" font-weight="bold">✓</text>
+</svg>

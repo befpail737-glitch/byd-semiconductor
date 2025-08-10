@@ -1,0 +1,26 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#e6f3ff" stroke="#0066cc" stroke-width="2"/>
+  
+  <!-- Warehouse building -->
+  <polygon points="15,35 30,20 45,35 45,50 15,50" fill="#0066cc"/>
+  <polygon points="15,35 30,20 45,35 42,35 30,25 18,35" fill="#4a90e2"/>
+  
+  <!-- Building details -->
+  <rect x="18" y="38" width="24" height="12" fill="#f8f9fa"/>
+  
+  <!-- Inventory boxes -->
+  <rect x="20" y="40" width="4" height="4" fill="#28a745"/>
+  <rect x="25" y="40" width="4" height="4" fill="#dc3545"/>
+  <rect x="30" y="40" width="4" height="4" fill="#ffc107"/>
+  <rect x="35" y="40" width="4" height="4" fill="#17a2b8"/>
+  
+  <rect x="20" y="45" width="4" height="4" fill="#6f42c1"/>
+  <rect x="25" y="45" width="4" height="4" fill="#fd7e14"/>
+  <rect x="30" y="45" width="4" height="4" fill="#20c997"/>
+  <rect x="35" y="45" width="4" height="4" fill="#e83e8c"/>
+  
+  <!-- Quantity indicators -->
+  <circle cx="47" cy="15" r="6" fill="#28a745"/>
+  <text x="47" y="18" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">∞</text>
+</svg>
