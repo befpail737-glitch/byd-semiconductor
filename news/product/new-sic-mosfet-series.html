@@ -322,6 +322,67 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="recent-news">
+                        <h3>Recent News</h3>
+                        <div class="news-list">
+                            <a href="#" class="news-item">
+                                <div class="news-date">Jan 5</div>
+                                <div class="news-info">
+                                    <h4>New IGBT Technology Breakthrough</h4>
+                                    <p>Enhanced thermal performance for EV applications</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-item">
+                                <div class="news-date">Dec 28</div>
+                                <div class="news-info">
+                                    <h4>Partnership with Automotive OEM</h4>
+                                    <p>Major automotive manufacturer selects BYD semiconductors</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-item">
+                                <div class="news-date">Dec 22</div>
+                                <div class="news-info">
+                                    <h4>Industry Recognition Award</h4>
+                                    <p>BYD wins Innovation Award for SiC technology</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="technical-resources">
+                        <h3>Technical Resources</h3>
+                        <div class="resource-list">
+                            <a href="/support/documentation/" class="resource-item">
+                                <div class="resource-icon">📄</div>
+                                <div class="resource-text">
+                                    <h4>Product Datasheets</h4>
+                                    <p>Complete technical specifications</p>
+                                </div>
+                            </a>
+                            <a href="/support/tools/" class="resource-item">
+                                <div class="resource-icon">🛠️</div>
+                                <div class="resource-text">
+                                    <h4>Design Tools</h4>
+                                    <p>Development and simulation tools</p>
+                                </div>
+                            </a>
+                            <a href="/support/training/" class="resource-item">
+                                <div class="resource-icon">🎓</div>
+                                <div class="resource-text">
+                                    <h4>Training Programs</h4>
+                                    <p>Technical training and seminars</p>
+                                </div>
+                            </a>
+                            <a href="/support/" class="resource-item">
+                                <div class="resource-icon">💬</div>
+                                <div class="resource-text">
+                                    <h4>Technical Support</h4>
+                                    <p>Expert engineering support</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </aside>
                 </div>
             </div>
@@ -552,7 +613,9 @@
         }
         
         .product-highlights,
-        .related-products {
+        .related-products,
+        .recent-news,
+        .technical-resources {
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 12px;
@@ -562,7 +625,9 @@
         }
         
         .product-highlights h3,
-        .related-products h3 {
+        .related-products h3,
+        .recent-news h3,
+        .technical-resources h3 {
             color: #0066cc;
             margin-bottom: 1.5rem;
             font-size: 1.2rem;
@@ -629,7 +694,9 @@
             }
             
             .product-highlights,
-            .related-products {
+            .related-products,
+            .recent-news,
+            .technical-resources {
                 position: static;
             }
         }
@@ -660,6 +727,98 @@
             .spec-table td {
                 padding: 0.5rem;
             }
+        }
+        
+        /* Recent News Styles */
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .news-item {
+            display: flex;
+            gap: 1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .news-date {
+            background: #0066cc;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-align: center;
+            min-width: 45px;
+            height: fit-content;
+        }
+        
+        .news-info h4 {
+            margin: 0 0 0.25rem 0;
+            font-size: 0.95rem;
+            color: #333;
+        }
+        
+        .news-info p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        /* Technical Resources Styles */
+        .resource-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .resource-icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .resource-text h4 {
+            margin: 0 0 0.25rem 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .resource-text p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.3;
         }
     </style>
 </body>

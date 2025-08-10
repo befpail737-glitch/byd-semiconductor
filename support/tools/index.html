@@ -68,6 +68,8 @@
 
         <section class="tool-categories">
             <div class="container">
+                <div class="tools-layout">
+                    <div class="main-content">
                 <h2>Development Tool Categories</h2>
                 
                 <div class="category-tabs">
@@ -409,6 +411,76 @@
                             </div>
                         </div>
                     </div>
+
+                    <aside class="sidebar">
+                        <div class="tool-quick-access">
+                            <h3>Quick Downloads</h3>
+                            <div class="quick-links">
+                                <a href="#" class="quick-link">
+                                    <div class="link-icon">⚙️</div>
+                                    <div class="link-info">
+                                        <h4>BYD Studio Pro</h4>
+                                        <p>Latest IDE v3.2.1</p>
+                                    </div>
+                                    <div class="download-btn">📥</div>
+                                </a>
+                                <a href="#" class="quick-link">
+                                    <div class="link-icon">🔧</div>
+                                    <div class="link-info">
+                                        <h4>Debugger Drivers</h4>
+                                        <p>Windows/Linux drivers</p>
+                                    </div>
+                                    <div class="download-btn">📥</div>
+                                </a>
+                                <a href="#" class="quick-link">
+                                    <div class="link-icon">📚</div>
+                                    <div class="link-info">
+                                        <h4>Code Examples</h4>
+                                        <p>Sample projects pack</p>
+                                    </div>
+                                    <div class="download-btn">📥</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="system-requirements">
+                            <h3>System Requirements</h3>
+                            <div class="req-list">
+                                <div class="req-item">
+                                    <strong>Operating System:</strong>
+                                    <p>Windows 10/11, Ubuntu 20.04+, macOS 10.15+</p>
+                                </div>
+                                <div class="req-item">
+                                    <strong>Memory:</strong>
+                                    <p>4GB RAM minimum, 8GB recommended</p>
+                                </div>
+                                <div class="req-item">
+                                    <strong>Storage:</strong>
+                                    <p>2GB free disk space</p>
+                                </div>
+                                <div class="req-item">
+                                    <strong>USB:</strong>
+                                    <p>USB 2.0+ port for debugger connection</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="support-contact">
+                            <h3>Need Help?</h3>
+                            <p>Get support for development tools</p>
+                            <div class="contact-options">
+                                <a href="/contact-us/" class="contact-btn">
+                                    📧 Contact Support
+                                </a>
+                                <a href="mailto:tools-support@litong-group.com" class="contact-btn">
+                                    📝 Email Tools Team
+                                </a>
+                                <a href="/support/training/" class="contact-btn">
+                                    🎓 Request Training
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -508,5 +580,167 @@
             });
         });
     </script>
+
+    <style>
+        .tools-layout {
+            display: grid;
+            grid-template-columns: 65% 35%;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .main-content {
+            background: #fff;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .tool-quick-access, .system-requirements, .support-contact {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .tool-quick-access h3, .system-requirements h3, .support-contact h3 {
+            color: #0066cc;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .quick-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .quick-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .link-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .link-info {
+            flex: 1;
+        }
+        
+        .link-info h4 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        
+        .link-info p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .download-btn {
+            font-size: 1.2rem;
+            color: #0066cc;
+        }
+        
+        .req-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .req-item {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #0066cc;
+        }
+        
+        .req-item strong {
+            color: #0066cc;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .req-item p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-btn {
+            background: #fff;
+            color: #0066cc;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border: 1px solid #0066cc;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .contact-btn:hover {
+            background: #0066cc;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.3);
+        }
+        
+        @media (max-width: 1024px) {
+            .tools-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .quick-link {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+            
+            .link-info h4 {
+                font-size: 0.9rem;
+            }
+            
+            .contact-btn {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </body>
 </html>

@@ -283,6 +283,62 @@
                                     <strong>Nov 20, 2024</strong>
                                     <p>New user guide for Developer Studio 2.5</p>
                                 </div>
+                                <div class="update-item">
+                                    <strong>Oct 25, 2024</strong>
+                                    <p>Gate driver selection guide v2.0</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-docs">
+                            <h3>Most Downloaded</h3>
+                            <div class="popular-list">
+                                <div class="popular-item">
+                                    <div class="doc-icon">📄</div>
+                                    <div class="popular-info">
+                                        <h4>BSC065N08NS7 Datasheet</h4>
+                                        <p>650V SiC MOSFET</p>
+                                        <span class="download-count">2,847 downloads</span>
+                                    </div>
+                                </div>
+                                <div class="popular-item">
+                                    <div class="doc-icon">📚</div>
+                                    <div class="popular-info">
+                                        <h4>SiC Gate Driver Design</h4>
+                                        <p>Application Note</p>
+                                        <span class="download-count">1,923 downloads</span>
+                                    </div>
+                                </div>
+                                <div class="popular-item">
+                                    <div class="doc-icon">🎯</div>
+                                    <div class="popular-info">
+                                        <h4>Automotive Selection Guide</h4>
+                                        <p>Product Matrix</p>
+                                        <span class="download-count">1,654 downloads</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="support-stats">
+                            <h3>Documentation Stats</h3>
+                            <div class="stats-list">
+                                <div class="stat-item">
+                                    <div class="stat-number">150+</div>
+                                    <div class="stat-label">Datasheets</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">75+</div>
+                                    <div class="stat-label">App Notes</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">30+</div>
+                                    <div class="stat-label">User Guides</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">15+</div>
+                                    <div class="stat-label">Selection Guides</div>
+                                </div>
                             </div>
                         </div>
                     </aside>
@@ -445,7 +501,7 @@
         
         .content-layout {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 65% 35%;
             gap: 3rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -463,14 +519,14 @@
             gap: 2rem;
         }
         
-        .support-contact, .quick-links, .recent-updates {
+        .support-contact, .quick-links, .recent-updates, .popular-docs, .support-stats {
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
         
-        .support-contact h3, .quick-links h3, .recent-updates h3 {
+        .support-contact h3, .quick-links h3, .recent-updates h3, .popular-docs h3, .support-stats h3 {
             color: #0066cc;
             margin-bottom: 1rem;
             font-size: 1.2rem;
@@ -665,6 +721,91 @@
                 padding: 0.6rem 0.8rem;
                 font-size: 0.9rem;
             }
+        }
+        
+        /* Popular Documents Styles */
+        .popular-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .popular-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .popular-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .popular-item .doc-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .popular-info {
+            flex: 1;
+        }
+        
+        .popular-info h4 {
+            margin: 0 0 0.25rem 0;
+            font-size: 0.95rem;
+            color: #333;
+        }
+        
+        .popular-info p {
+            margin: 0 0 0.25rem 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .download-count {
+            font-size: 0.75rem;
+            color: #0066cc;
+            font-weight: 500;
+        }
+        
+        /* Support Stats Styles */
+        .stats-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0066cc;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 500;
         }
     </style>
 </body>
