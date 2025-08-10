@@ -922,8 +922,16 @@
         
         .content-wrapper {
             display: grid;
-            grid-template-columns: 2fr 300px;
+            grid-template-columns: 1.5fr 1fr;
             gap: 3rem;
+            max-width: none;
+            width: 100%;
+        }
+        
+        .article-content .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
         
         .main-content {
@@ -1303,15 +1311,18 @@
         .sidebar {
             align-self: start;
             position: sticky;
-            top: 120px;
+            top: 20px;
+            height: fit-content;
+            min-width: 0;
+            width: 100%;
         }
         
         .sidebar-widget {
             background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
             border: none;
             border-radius: 20px;
-            padding: 2rem;
-            margin-bottom: 2rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
             box-shadow: 0 8px 25px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
             transition: all 0.3s ease;
             position: relative;
@@ -1417,8 +1428,8 @@
         .mcu-item {
             background: linear-gradient(145deg, #f0f8ff 0%, #e6f3ff 100%);
             border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
+            padding: 1.25rem;
+            margin-bottom: 0.75rem;
             transition: all 0.3s ease;
         }
         
@@ -1742,7 +1753,7 @@
             text-decoration: underline;
         }
         
-        @media (max-width: 1024px) {
+        @media (max-width: 1200px) {
             .content-wrapper {
                 grid-template-columns: 1fr;
                 gap: 2rem;
