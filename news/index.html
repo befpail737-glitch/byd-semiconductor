@@ -252,11 +252,12 @@
         }
         
         .news-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            align-items: start;
         }
         
         .news-item {
@@ -269,6 +270,8 @@
             display: flex;
             gap: 2rem;
             align-items: flex-start;
+            min-height: 200px;
+            height: fit-content;
         }
         
         .news-item:hover {
@@ -381,6 +384,11 @@
         }
         
         @media (max-width: 768px) {
+            .news-list {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
             .news-categories {
                 display: flex;
                 flex-wrap: wrap;
