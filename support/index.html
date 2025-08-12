@@ -110,28 +110,99 @@
             </div>
         </section>
 
-        <section class="support-contact">
+        <section class="support-layout">
             <div class="container">
-                <div class="contact-options">
-                    <div class="contact-method">
-                        <h3>📧 Email Support</h3>
-                        <p><strong>Technical:</strong> <a href="mailto:support@litong-group.com">support@litong-group.com</a></p>
-                        <p><strong>Sales:</strong> <a href="mailto:sales@litong-group.com">sales@litong-group.com</a></p>
-                        <p><em>Response time: Within 4 hours</em></p>
+                <div class="layout-grid">
+                    <div class="main-content">
+                        <div class="contact-options">
+                            <div class="contact-method">
+                                <h3>📧 Email Support</h3>
+                                <p><strong>Technical:</strong> <a href="mailto:support@litong-group.com">support@litong-group.com</a></p>
+                                <p><strong>Sales:</strong> <a href="mailto:sales@litong-group.com">sales@litong-group.com</a></p>
+                                <p><em>Response time: Within 4 hours</em></p>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h3>📞 Phone Support</h3>
+                                <p><strong>Hong Kong HQ:</strong> <a href="tel:+85224248227">+852-24248227</a></p>
+                                <p><strong>China Mainland:</strong> <a href="tel:+8618612518271">+86-18612518271</a></p>
+                                <p><em>Business hours: Mon-Fri 9:00-18:00</em></p>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h3>🌐 Global Network</h3>
+                                <p>Local support in 18+ countries worldwide</p>
+                                <p>Multilingual technical assistance</p>
+                                <p><a href="/contact-us/">Find your local office →</a></p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="contact-method">
-                        <h3>📞 Phone Support</h3>
-                        <p><strong>Hong Kong HQ:</strong> <a href="tel:+85224248227">+852-24248227</a></p>
-                        <p><strong>China Mainland:</strong> <a href="tel:+8618612518271">+86-18612518271</a></p>
-                        <p><em>Business hours: Mon-Fri 9:00-18:00</em></p>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <h3>🌐 Global Network</h3>
-                        <p>Local support in 18+ countries worldwide</p>
-                        <p>Multilingual technical assistance</p>
-                        <p><a href="/contact-us/">Find your local office →</a></p>
+                    <div class="sidebar">
+                        <div class="sidebar-widget">
+                            <h4>📚 Quick Resources</h4>
+                            <ul class="resource-list">
+                                <li><a href="/support/guides/how-to-select-byd-automotive-mcu.html">MCU Selection Guide</a></li>
+                                <li><a href="/support/documentation/">Product Datasheets</a></li>
+                                <li><a href="/products/power/igbt-module/">IGBT Module Catalog</a></li>
+                                <li><a href="/products/sic/">SiC MOSFET Products</a></li>
+                                <li><a href="/news/technical/">Technical Articles</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h4>🚀 Latest Updates</h4>
+                            <div class="update-item">
+                                <h5>New SiC MOSFET Series</h5>
+                                <p>Latest BYD SiC MOSFETs with improved efficiency...</p>
+                                <a href="/news/product/new-sic-mosfet-series.html">Read more →</a>
+                            </div>
+                            <div class="update-item">
+                                <h5>IGBT Thermal Management</h5>
+                                <p>Best practices for IGBT thermal design...</p>
+                                <a href="/news/technical/igbt-thermal-management.html">Read more →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-widget support-stats">
+                            <h4>📊 Support Stats</h4>
+                            <div class="stat-item">
+                                <div class="stat-number">4hrs</div>
+                                <div class="stat-label">Avg Response Time</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Customer Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">18+</div>
+                                <div class="stat-label">Countries Served</div>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-widget cta-widget">
+                            <h4>💬 Need Immediate Help?</h4>
+                            <p>Connect with our FAE team for instant technical support</p>
+                            <a href="/contact-us/" class="btn btn-primary btn-sm">Contact FAE Now</a>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h4>🎯 Popular Solutions</h4>
+                            <div class="solution-links">
+                                <a href="/solutions/automotive/" class="solution-link">
+                                    <span class="solution-icon">🚗</span>
+                                    <span class="solution-name">Automotive</span>
+                                </a>
+                                <a href="/solutions/industrial/" class="solution-link">
+                                    <span class="solution-icon">🏭</span>
+                                    <span class="solution-name">Industrial</span>
+                                </a>
+                                <a href="/solutions/energy/" class="solution-link">
+                                    <span class="solution-icon">⚡</span>
+                                    <span class="solution-name">Energy</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,9 +336,17 @@
             box-shadow: 0 4px 12px rgba(0,102,204,0.3);
         }
         
-        .support-contact {
+        .support-layout {
             padding: 4rem 0;
             background-color: #f8f9fa;
+        }
+        
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
         }
         
         .contact-options {
@@ -295,6 +374,219 @@
         
         .contact-method a:hover {
             text-decoration: underline;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .sidebar-widget {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+        }
+        
+        .sidebar-widget h4 {
+            color: #0066cc;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f8ff;
+        }
+        
+        .resource-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .resource-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .resource-list li:before {
+            content: '📄';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .resource-list a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            transition: color 0.3s ease;
+        }
+        
+        .resource-list a:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        
+        .update-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .update-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .update-item h5 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .update-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+        
+        .update-item a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .update-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .support-stats {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .support-stats h4 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.3);
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+            color: white;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .cta-widget {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-widget h4 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.3);
+        }
+        
+        .cta-widget p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn-sm {
+            padding: 0.5rem 1.5rem;
+            font-size: 0.9rem;
+            border-radius: 25px;
+            background: white;
+            color: #28a745;
+            font-weight: 600;
+            border: 2px solid white;
+        }
+        
+        .btn-sm:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .solution-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .solution-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .solution-link:hover {
+            background: #0066cc;
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .solution-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+        
+        .solution-name {
+            font-weight: 500;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .layout-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .support-layout {
+                padding: 2rem 0;
+            }
+            
+            .contact-options {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
     </style>
 </body>

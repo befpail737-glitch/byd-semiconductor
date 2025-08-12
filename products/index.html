@@ -42,47 +42,86 @@
             <div class="container">
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-icon">
-                            <img src="../assets/images/icon-power-semi.svg" alt="Power Semiconductors" width="80" height="80">
+                        <div class="product-header">
+                            <div class="product-icon">
+                                <img src="../assets/images/icon-power-semi.svg" alt="Power Semiconductors" width="80" height="80">
+                            </div>
+                            <div class="product-badge">Featured</div>
                         </div>
-                        <h3><a href="/products/power-semiconductors/">Power Semiconductors</a></h3>
-                        <p>IGBT, SiC, IPM modules for automotive and industrial applications</p>
-                        <div class="product-actions">
-                            <a href="/products/power/igbt-module/BSM300D12P2E001.html" class="btn btn-primary">View Product</a>
-                            <a href="/products/power-semiconductors/" class="btn btn-outline">View All</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <img src="../assets/images/icon-mcu.svg" alt="Smart Control ICs" width="80" height="80">
-                        </div>
-                        <h3><a href="/products/smart-control-ics/">Smart Control ICs</a></h3>
-                        <p>Automotive MCU and Industrial MCU solutions</p>
-                        <div class="product-actions">
-                            <a href="/products/smart-control-ics/BIC150D12M001.html" class="btn btn-primary">View Product</a>
-                            <a href="/products/smart-control-ics/" class="btn btn-outline">View All</a>
+                        <div class="product-content">
+                            <h3><a href="/products/power-semiconductors/">Power Semiconductors</a></h3>
+                            <p>IGBT, SiC, IPM modules for automotive and industrial applications</p>
+                            <ul class="feature-list">
+                                <li>Automotive-grade IGBT modules</li>
+                                <li>High-efficiency SiC MOSFETs</li>
+                                <li>Integrated Power Modules (IPM)</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="/products/power-semiconductors/" class="btn btn-primary">Explore Products</a>
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="product-card">
-                        <div class="product-icon">
-                            <img src="../assets/images/icon-sensor.svg" alt="Smart Sensors" width="80" height="80">
+                        <div class="product-header">
+                            <div class="product-icon">
+                                <img src="../assets/images/icon-mcu.svg" alt="Smart Control ICs" width="80" height="80">
+                            </div>
+                            <div class="product-badge">Popular</div>
                         </div>
-                        <h3><a href="/products/smart-sensors/">Smart Sensors</a></h3>
-                        <p>Current sensors and CMOS image sensors</p>
-                        <div class="product-actions">
-                            <a href="/products/smart-sensors/BTS300D12S001.html" class="btn btn-primary">View Product</a>
-                            <a href="/products/smart-sensors/" class="btn btn-outline">View All</a>
+                        <div class="product-content">
+                            <h3><a href="/products/smart-control-ics/">Smart Control ICs</a></h3>
+                            <p>Automotive MCU and Industrial MCU solutions</p>
+                            <ul class="feature-list">
+                                <li>32-bit Automotive MCUs</li>
+                                <li>General-purpose Industrial MCUs</li>
+                                <li>Body control and thermal management</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="/products/smart-control-ics/" class="btn btn-primary">Explore Products</a>
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="product-card">
-                        <div class="product-icon">
-                            <img src="../assets/images/icon-optoelectronic.svg" alt="Optoelectronic" width="80" height="80">
+                        <div class="product-header">
+                            <div class="product-icon">
+                                <img src="../assets/images/icon-sensor.svg" alt="Smart Sensors" width="80" height="80">
+                            </div>
+                            <div class="product-badge">New</div>
                         </div>
-                        <h3><a href="/products/optoelectronic/">Optoelectronic</a></h3>
-                        <p>LED lighting and display solutions</p>
-                        <div class="product-actions">
-                            <a href="/products/optoelectronic/BOL150D12I001.html" class="btn btn-primary">View Product</a>
-                            <a href="/products/optoelectronic/" class="btn btn-outline">View All</a>
+                        <div class="product-content">
+                            <h3><a href="/products/smart-sensors/">Smart Sensors</a></h3>
+                            <p>Current sensors and CMOS image sensors</p>
+                            <ul class="feature-list">
+                                <li>Hall-effect current sensors</li>
+                                <li>CMOS image sensors</li>
+                                <li>Automotive-grade sensing solutions</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="/products/smart-sensors/" class="btn btn-primary">Explore Products</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-header">
+                            <div class="product-icon">
+                                <img src="../assets/images/icon-optoelectronic.svg" alt="Optoelectronic" width="80" height="80">
+                            </div>
+                            <div class="product-badge">Innovation</div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="/products/optoelectronic/">Optoelectronic</a></h3>
+                            <p>LED lighting and display solutions</p>
+                            <ul class="feature-list">
+                                <li>High-efficiency LED drivers</li>
+                                <li>Display backlighting solutions</li>
+                                <li>Automotive lighting systems</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="/products/optoelectronic/" class="btn btn-primary">Explore Products</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,45 +156,191 @@
         </div>
     </footer>
     <style>
-        .product-actions {
+        .product-areas {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            min-height: 400px;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-header {
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .product-icon {
+            margin-bottom: 1rem;
+        }
+        
+        .product-icon img {
+            filter: brightness(0) invert(1);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+        
+        .product-content {
+            padding: 2rem;
+            height: calc(100% - 160px);
             display: flex;
-            gap: 0.5rem;
-            margin-top: 1rem;
+            flex-direction: column;
+        }
+        
+        .product-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .product-content h3 a {
+            color: #1e293b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .product-content h3 a:hover {
+            color: #0066cc;
+        }
+        
+        .product-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+            flex-grow: 1;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #475569;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            color: #22c55e;
+            font-weight: bold;
+        }
+        
+        .product-actions {
+            margin-top: auto;
         }
         
         .product-actions .btn {
-            flex: 1;
+            display: block;
+            width: 100%;
             text-align: center;
-            padding: 0.75rem 1rem;
-            font-size: 0.9rem;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
         
         .product-actions .btn-primary {
-            background: #0066cc;
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
             color: white;
-            border: 1px solid #0066cc;
+            border: none;
         }
         
         .product-actions .btn-primary:hover {
-            background: #004499;
-            border-color: #004499;
+            background: linear-gradient(135deg, #004499 0%, #003366 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
         }
         
-        .product-actions .btn-outline {
-            background: transparent;
-            color: #0066cc;
-            border: 1px solid #0066cc;
-        }
-        
-        .product-actions .btn-outline:hover {
-            background: #0066cc;
-            color: white;
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                max-width: 600px;
+            }
         }
         
         @media (max-width: 768px) {
-            .product-actions {
-                flex-direction: column;
+            .product-areas {
+                padding: 2rem 0;
             }
+            
+            .product-card {
+                min-height: 350px;
+            }
+            
+            .product-header {
+                padding: 1.5rem;
+            }
+            
+            .product-content {
+                padding: 1.5rem;
+                height: calc(100% - 120px);
+            }
+        }
+        
+        /* Special styling for different product types */
+        .product-card:nth-child(1) .product-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .product-card:nth-child(2) .product-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .product-card:nth-child(3) .product-header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .product-card:nth-child(4) .product-header {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
         }
     </style>
 </body>
