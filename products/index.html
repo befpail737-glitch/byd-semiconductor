@@ -47,7 +47,10 @@
                         </div>
                         <h3><a href="/products/power-semiconductors/">Power Semiconductors</a></h3>
                         <p>IGBT, SiC, IPM modules for automotive and industrial applications</p>
-                        <a href="/products/power-semiconductors/" class="btn btn-outline">Explore Products</a>
+                        <div class="product-actions">
+                            <a href="/products/power/igbt-module/BSM300D12P2E001.html" class="btn btn-primary">View Product</a>
+                            <a href="/products/power-semiconductors/" class="btn btn-outline">View All</a>
+                        </div>
                     </div>
                     <div class="product-card">
                         <div class="product-icon">
@@ -55,7 +58,10 @@
                         </div>
                         <h3><a href="/products/smart-control-ics/">Smart Control ICs</a></h3>
                         <p>Automotive MCU and Industrial MCU solutions</p>
-                        <a href="/products/smart-control-ics/" class="btn btn-outline">Explore Products</a>
+                        <div class="product-actions">
+                            <a href="/products/smart-control-ics/BIC150D12M001.html" class="btn btn-primary">View Product</a>
+                            <a href="/products/smart-control-ics/" class="btn btn-outline">View All</a>
+                        </div>
                     </div>
                     <div class="product-card">
                         <div class="product-icon">
@@ -63,7 +69,10 @@
                         </div>
                         <h3><a href="/products/smart-sensors/">Smart Sensors</a></h3>
                         <p>Current sensors and CMOS image sensors</p>
-                        <a href="/products/smart-sensors/" class="btn btn-outline">Explore Products</a>
+                        <div class="product-actions">
+                            <a href="/products/smart-sensors/BTS300D12S001.html" class="btn btn-primary">View Product</a>
+                            <a href="/products/smart-sensors/" class="btn btn-outline">View All</a>
+                        </div>
                     </div>
                     <div class="product-card">
                         <div class="product-icon">
@@ -71,7 +80,10 @@
                         </div>
                         <h3><a href="/products/optoelectronic/">Optoelectronic</a></h3>
                         <p>LED lighting and display solutions</p>
-                        <a href="/products/optoelectronic/" class="btn btn-outline">Explore Products</a>
+                        <div class="product-actions">
+                            <a href="/products/optoelectronic/BOL150D12I001.html" class="btn btn-primary">View Product</a>
+                            <a href="/products/optoelectronic/" class="btn btn-outline">View All</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,5 +116,47 @@
             </div>
         </div>
     </footer>
+    <style>
+        .product-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .product-actions .btn {
+            flex: 1;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .product-actions .btn-primary {
+            background: #0066cc;
+            color: white;
+            border: 1px solid #0066cc;
+        }
+        
+        .product-actions .btn-primary:hover {
+            background: #004499;
+            border-color: #004499;
+        }
+        
+        .product-actions .btn-outline {
+            background: transparent;
+            color: #0066cc;
+            border: 1px solid #0066cc;
+        }
+        
+        .product-actions .btn-outline:hover {
+            background: #0066cc;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .product-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
 </body>
 </html>
