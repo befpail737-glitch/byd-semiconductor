@@ -1,165 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.core-tek.com/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/power-semiconductors/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/power-semiconductors/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/smart-control-ics/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/smart-control-ics/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/smart-sensors/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/smart-sensors/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/optoelectronic/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/optoelectronic/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/power/igbt-module/BSM1200D12P2C01s.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/sic/</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/ipm/</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/BSM1200D12P2C01s.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/mcu/BS32F103VGT7.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/BSM150D12P2H001.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/sic/BMS1D20120P3.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/BSM1800D12P2G001.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/ipm/BIM50S65T.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/BSM300D12P2E001.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/products/sensor/BCS05S01.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/BSM600D12P2F001.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/solutions/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/products/power/igbt-module/BSM750D12P2D001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/sic/BSC750D65M1G001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/ipm/BIM300D75P3I001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-control-ics/BIC150D12M001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-control-ics/BIM300D12P3S001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-control-ics/BIM600D12P3S001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-control-ics/BPM100D12C001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-control-ics/BPS300D12V001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-sensors/BTS100D12R001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-sensors/BTS150D12S001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-sensors/BTS300D12S001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-sensors/BTS700D12S001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/smart-sensors/BVS400D12T001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/optoelectronic/BOA300D12A001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/optoelectronic/BOD500D12L001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/optoelectronic/BOL150D12I001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/optoelectronic/BOP200D12P001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/products/optoelectronic/BOR100D12R001.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/solutions/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/solutions/automotive/motor-drive-inverter.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/solutions/automotive/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/solutions/automotive/bms.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/solutions/energy/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/solutions/industrial/inverters.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/solutions/industrial/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/solutions/energy/pv-inverters.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/solutions/home-appliances/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/solutions/home-appliances/air-conditioners.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.core-tek.com/support/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/support/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/support/guides/how-to-select-byd-automotive-mcu.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/support/documentation/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/support/app-notes/800v-obc-design-considerations.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/support/tools/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/support/troubleshooting/igbt-gate-driver-issues.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/support/training/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/news/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/support/guides/how-to-select-byd-automotive-mcu.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/news/</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/news/company/distributor-award-2025.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/news/company/distributor-award-2025.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/news/industry/sic-market-trends-2025.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <loc>https://bydsemi-distributor.com/news/company/new-facility-expansion.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/about-us/</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://bydsemi-distributor.com/news/industry/ev-market-trends-2025.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/contact-us/</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://bydsemi-distributor.com/news/product/new-sic-mosfet-series.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.core-tek.com/faq/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://bydsemi-distributor.com/news/technical/automotive-mcu-selection-guide.html</loc>
+        <lastmod>2025-08-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/news/technical/igbt-thermal-management.html</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/about-us/</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/contact-us/</loc>
+        <lastmod>2025-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
