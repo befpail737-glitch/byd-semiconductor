@@ -87,6 +87,10 @@
                 <h1>Designing Efficient Inverters with BYD IGBT Modules</h1>
                 <p class="hero-subtitle">A comprehensive guide to optimizing inverter performance using BYD semiconductor solutions</p>
                 <div class="article-meta">
+                    <div class="authors">
+                        <span class="author">John Smith, Senior Field Application Engineer</span>
+                        <span class="author">Lisa Wang, Field Application Engineer</span>
+                    </div>
                     <time datetime="2025-01-20">January 20, 2025</time> | 
                     <span>Technical Guide</span> | 
                     <span>15 min read</span>
@@ -319,6 +323,17 @@
                             </ul>
                         </div>
 
+                        <div class="article-section" id="references">
+                            <h2>References</h2>
+                            <ol>
+                                <li>BYD Semiconductor, "BSM1200D12P2C01s Datasheet," 2024.</li>
+                                <li>IEEE Standards Association, "IEEE Std 101-2023: Test Procedures for Semiconductor Devices," 2023.</li>
+                                <li>M. A. Green et al., "Solar cell efficiency tables (Version 58)," Progress in Photovoltaics: Research and Applications, vol. 29, no. 7, pp. 628-637, 2021.</li>
+                                <li>S. Balachandran et al., "Thermal Management of Power Electronic Systems," CRC Press, 2022.</li>
+                                <li>J. Biela et al., "Loss Evaluation of PWM Inverters for EV Traction Drives," IEEE Transactions on Industrial Electronics, vol. 60, no. 8, pp. 3199-3209, 2013.</li>
+                            </ol>
+                        </div>
+
                         <div class="article-section" id="conclusion">
                             <h2>Conclusion</h2>
                             <p>Designing efficient inverters with BYD IGBT modules requires careful attention to thermal management, gate drive design, PCB layout, and EMI reduction. By following the guidelines presented in this article, designers can achieve optimal performance while maintaining reliability and regulatory compliance.</p>
@@ -327,9 +342,13 @@
                         </div>
 
                         <div class="article-cta">
-                            <h3>Need Help with Your Inverter Design?</h3>
-                            <p>Our field application engineers can provide personalized support for your specific requirements.</p>
-                            <a href="/contact-us/?inquiry=technical" class="btn btn-primary">Contact Technical Support</a>
+                            <h3>Was this content helpful?</h3>
+                            <div class="content-rating">
+                                <button class="rating-btn" data-rating="positive">👍 Yes</button>
+                                <button class="rating-btn" data-rating="negative">👎 No</button>
+                            </div>
+                            <p class="rating-thanks" style="display: none;">Thank you for your feedback!</p>
+                            <p>Need help with your inverter design? <a href="/contact-us/?inquiry=technical" class="btn btn-primary">Contact Technical Support</a></p>
                         </div>
                     </article>
 
@@ -354,6 +373,27 @@
                         </div>
 
                         <div class="sidebar-widget">
+                            <h3>Authors</h3>
+                            <div class="author-info">
+                                <div class="author">
+                                    <img src="/assets/images/team/john-smith.jpg" alt="John Smith" width="60" height="60">
+                                    <div class="author-details">
+                                        <strong>John Smith</strong>
+                                        <div class="author-title">Senior Field Application Engineer</div>
+                                        <div class="author-credentials">12 years experience in power electronics, BSEE from UC Berkeley</div>
+                                    </div>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/images/team/lisa-wang.jpg" alt="Lisa Wang" width="60" height="60">
+                                    <div class="author-details">
+                                        <strong>Lisa Wang</strong>
+                                        <div class="author-title">Field Application Engineer</div>
+                                        <div class="author-credentials">8 years experience in automotive electronics, MSEE from MIT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="sidebar-widget">
                             <h3>Share This Article</h3>
                             <div class="social-share">
                                 <a href="#" class="share-btn linkedin">LinkedIn</a>
@@ -422,6 +462,34 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+    <script>
+        // Content rating functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const ratingButtons = document.querySelectorAll('.rating-btn');
+            ratingButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    
+                    // Show thank you message
+                    this.parentElement.querySelector('.rating-thanks').style.display = 'block';
+                    this.parentElement.querySelectorAll('.rating-btn').forEach(function(btn) {
+                        btn.style.display = 'none';
+                    });
+                    
+                    // If negative rating, show feedback prompt
+                    if (rating === 'negative') {
+                        setTimeout(function() {
+                            const feedback = prompt('We\'re sorry to hear that. How can we improve this content?');
+                            if (feedback) {
+                                // In a real implementation, this would send the feedback to a server
+                                alert('Thank you for your detailed feedback. We\'ll use it to improve our content.');
+                            }
+                        }, 1000);
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

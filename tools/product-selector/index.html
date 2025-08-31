@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selector Tool | LiTong Group | BYD Semiconductor</title>
+    <meta name="description" content="Interactive product selector tool to help you find the right BYD semiconductor products for your application requirements.">
+    <meta name="keywords" content="product selector, semiconductor selector, IGBT selector, MCU selector, BYD semiconductor tools">
+    <meta property="og:title" content="Product Selector Tool | LiTong Group | BYD Semiconductor">
+    <meta property="og:description" content="Interactive product selector tool to help you find the right BYD semiconductor products for your application requirements.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bydsemi-distributor.com/tools/product-selector/">
+    <meta property="og:image" content="https://bydsemi-distributor.com/assets/images/litong-logo.svg">
+    <meta property="og:site_name" content="LiTong Group">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Selector Tool | LiTong Group | BYD Semiconductor">
+    <meta name="twitter:description" content="Interactive product selector tool to help you find the right BYD semiconductor products for your application requirements.">
+    <meta name="twitter:image" content="https://bydsemi-distributor.com/assets/images/litong-logo.svg">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="canonical" href="https://bydsemi-distributor.com/tools/product-selector/">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/" class="logo">
+                    <img src="/assets/images/litong-logo.svg" alt="LiTong Group BYD Semiconductor Distributor" width="150" height="40">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/products/" class="dropdown-toggle">Products</a>
+                        <div class="dropdown-menu">
+                            <a href="/products/power-semiconductors/">Power Semiconductors</a>
+                            <a href="/products/smart-control-ics/">Smart Control ICs</a>
+                            <a href="/products/smart-sensors/">Smart Sensors</a>
+                            <a href="/products/optoelectronic/">Optoelectronic</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/solutions/" class="dropdown-toggle">Solutions</a>
+                        <div class="dropdown-menu">
+                            <a href="/solutions/automotive/">New Energy Vehicles</a>
+                            <a href="/solutions/industrial/">Industrial Control</a>
+                            <a href="/solutions/energy/">PV & Energy Storage</a>
+                            <a href="/solutions/home-appliances/">Smart Home Appliances</a>
+                        </div>
+                    </li>
+                    <li><a href="/support/" class="dropdown-toggle">Technical Support</a></li>
+                    <li><a href="/tools/" class="dropdown-toggle active">Tools</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/contact-us/">Contact</a></li>
+                </ul>
+                <div class="navbar-cta">
+                    <a href="/contact-us/" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/tools/">Tools</a></li>
+                        <li>Product Selector</li>
+                    </ol>
+                </nav>
+                <h1>Product Selector Tool</h1>
+                <p class="hero-subtitle">Find the right BYD semiconductor products for your application</p>
+            </div>
+        </section>
+
+        <section class="tool-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Smart Product Selection Made Simple</h2>
+                        <p>Our interactive product selector helps you quickly identify the most suitable BYD semiconductor products based on your specific application requirements. Simply answer a few questions about your project, and we'll recommend the best options.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-selector">
+            <div class="container">
+                <div class="selector-layout">
+                    <div class="selector-form">
+                        <form id="productSelectorForm">
+                            <div class="form-step active" id="step1">
+                                <h3>Step 1: Application Type</h3>
+                                <div class="form-group">
+                                    <label>What type of application are you designing for?</label>
+                                    <div class="radio-group">
+                                        <label class="radio-option">
+                                            <input type="radio" name="applicationType" value="automotive">
+                                            <span class="radio-label">Automotive (EVs, Hybrid Vehicles)</span>
+                                        </label>
+                                        <label class="radio-option">
+                                            <input type="radio" name="applicationType" value="industrial">
+                                            <span class="radio-label">Industrial (Motor Drives, UPS)</span>
+                                        </label>
+                                        <label class="radio-option">
+                                            <input type="radio" name="applicationType" value="renewable">
+                                            <span class="radio-label">Renewable Energy (Solar, Wind)</span>
+                                        </label>
+                                        <label class="radio-option">
+                                            <input type="radio" name="applicationType" value="consumer">
+                                            <span class="radio-label">Consumer Electronics (Appliances, HVAC)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary next-step" data-next="step2">Next</button>
+                            </div>
+
+                            <div class="form-step" id="step2">
+                                <h3>Step 2: Power Requirements</h3>
+                                <div class="form-group">
+                                    <label for="powerLevel">What is your approximate power level?</label>
+                                    <select id="powerLevel" name="powerLevel" class="form-control">
+                                        <option value="">Select power level</option>
+                                        <option value="low">Low Power (&lt; 1kW)</option>
+                                        <option value="medium">Medium Power (1kW - 10kW)</option>
+                                        <option value="high">High Power (10kW - 100kW)</option>
+                                        <option value="veryHigh">Very High Power (&gt; 100kW)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="voltage">What is your operating voltage range?</label>
+                                    <select id="voltage" name="voltage" class="form-control">
+                                        <option value="">Select voltage range</option>
+                                        <option value="low">Low Voltage (&lt; 100V)</option>
+                                        <option value="medium">Medium Voltage (100V - 1000V)</option>
+                                        <option value="high">High Voltage (&gt; 1000V)</option>
+                                    </select>
+                                </div>
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-outline prev-step" data-prev="step1">Previous</button>
+                                    <button type="button" class="btn btn-primary next-step" data-next="step3">Next</button>
+                                </div>
+                            </div>
+
+                            <div class="form-step" id="step3">
+                                <h3>Step 3: Product Category</h3>
+                                <div class="form-group">
+                                    <label>What type of semiconductor products do you need?</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="productCategory" value="igbt">
+                                            <span class="checkbox-label">IGBT Modules</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="productCategory" value="sic">
+                                            <span class="checkbox-label">SiC MOSFETs</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="productCategory" value="ipm">
+                                            <span class="checkbox-label">Intelligent Power Modules (IPM)</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="productCategory" value="mcu">
+                                            <span class="checkbox-label">Microcontrollers (MCUs)</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="productCategory" value="sensor">
+                                            <span class="checkbox-label">Sensors</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-outline prev-step" data-prev="step2">Previous</button>
+                                    <button type="button" class="btn btn-primary next-step" data-next="step4">Next</button>
+                                </div>
+                            </div>
+
+                            <div class="form-step" id="step4">
+                                <h3>Step 4: Special Requirements</h3>
+                                <div class="form-group">
+                                    <label>Do you have any special requirements?</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="specialRequirements" value="automotiveGrade">
+                                            <span class="checkbox-label">Automotive Grade (AEC-Q101)</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="specialRequirements" value="highTemperature">
+                                            <span class="checkbox-label">High Temperature Operation</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="specialRequirements" value="highEfficiency">
+                                            <span class="checkbox-label">High Efficiency Priority</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="specialRequirements" value="costSensitive">
+                                            <span class="checkbox-label">Cost Sensitive Application</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-outline prev-step" data-prev="step3">Previous</button>
+                                    <button type="button" class="btn btn-primary" id="getResult">Get Recommendations</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="selector-results">
+                        <div class="results-placeholder">
+                            <h3>Your Recommendations Will Appear Here</h3>
+                            <p>Complete the selection process to see recommended products for your application.</p>
+                            <img src="/assets/images/tools/product-selector-illustration.svg" alt="Product Selector Illustration" width="200" height="200">
+                        </div>
+                        <div class="results-content" style="display: none;">
+                            <h3>Recommended Products</h3>
+                            <div class="recommended-products">
+                                <!-- Results will be populated by JavaScript -->
+                            </div>
+                            <div class="results-actions">
+                                <button class="btn btn-primary" id="downloadResults">Download Results</button>
+                                <button class="btn btn-outline" id="contactFAE">Contact FAE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tool-features">
+            <div class="container">
+                <h2>Why Use Our Product Selector?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#0066cc">
+                                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
+                            </svg>
+                        </div>
+                        <h3>Accurate Recommendations</h3>
+                        <p>Based on real-world application data from 500+ customer projects</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#28a745">
+                                <path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19 4.45,18.95 4.25,18.75L2.5,17C2.32,16.81 2.25,16.55 2.31,16.31C2.83,14.7 3.83,13.2 5.31,12L4.39,10.5C4.19,10.19 4.21,9.8 4.43,9.5L7.16,6.77C7.36,6.57 7.64,6.5 7.91,6.59L10.57,7.5C11.07,7.08 11.57,6.74 12,6.5C12.43,6.74 12.93,7.08 13.43,7.5L16.09,6.59C16.36,6.5 16.64,6.57 16.84,6.77L19.57,9.5C19.79,9.8 19.81,10.19 19.61,10.5L18.69,12C20.17,13.2 21.17,14.7 21.69,16.31C21.75,16.55 21.68,16.81 21.5,17L19.75,18.75C19.55,18.95 19.27,19 19.05,18.95L16.56,17.94C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10Z"/>
+                            </svg>
+                        </div>
+                        <h3>Expert Knowledge</h3>
+                        <p>Incorporates insights from our senior field application engineers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffc107">
+                                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                            </svg>
+                        </div>
+                        <h3>Time Saving</h3>
+                        <p>Reduce product selection time from hours to minutes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="/products/power-semiconductors/">Power Semiconductors</a></li>
+                        <li><a href="/products/smart-control-ics/">Smart Control ICs</a></li>
+                        <li><a href="/products/smart-sensors/">Smart Sensors</a></li>
+                        <li><a href="/products/optoelectronic/">Optoelectronic</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="/solutions/automotive/">New Energy Vehicles</a></li>
+                        <li><a href="/solutions/industrial/">Industrial Control</a></li>
+                        <li><a href="/solutions/energy/">PV & Energy Storage</a></li>
+                        <li><a href="/solutions/home-appliances/">Smart Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/support/guides/">Selection Guides</a></li>
+                        <li><a href="/support/app-notes/">Application Notes</a></li>
+                        <li><a href="/support/technical-guides/">Technical Guides</a></li>
+                        <li><a href="/support/troubleshooting/">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/about-us/">About Us</a></li>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/contact-us/">Contact</a></li>
+                        <li><a href="/careers/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Group. All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-of-service/">Terms of Service</a></p>
+                <p>Core BYD Semiconductor Distributor</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <script>
+        // Product selector functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation between steps
+            document.querySelectorAll('.next-step').forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStep = this.closest('.form-step');
+                    const nextStepId = this.getAttribute('data-next');
+                    const nextStep = document.getElementById(nextStepId);
+                    
+                    currentStep.classList.remove('active');
+                    nextStep.classList.add('active');
+                });
+            });
+            
+            document.querySelectorAll('.prev-step').forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStep = this.closest('.form-step');
+                    const prevStepId = this.getAttribute('data-prev');
+                    const prevStep = document.getElementById(prevStepId);
+                    
+                    currentStep.classList.remove('active');
+                    prevStep.classList.add('active');
+                });
+            });
+            
+            // Get recommendations
+            document.getElementById('getResult').addEventListener('click', function() {
+                // In a real implementation, this would send the form data to a server
+                // and receive product recommendations
+                
+                // For demo purposes, we'll show some sample results
+                const resultsContent = document.querySelector('.results-content');
+                const placeholder = document.querySelector('.results-placeholder');
+                
+                placeholder.style.display = 'none';
+                resultsContent.style.display = 'block';
+                
+                const recommendedProducts = `
+                    <div class="product-recommendation">
+                        <div class="product-info">
+                            <h4>BSM1200D12P2C01s</h4>
+                            <p>1200V/1200A Automotive-Grade IGBT Power Module</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Automotive Grade</span>
+                                <span class="feature-tag">High Efficiency</span>
+                                <span class="feature-tag">AEC-Q101</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="/products/power/igbt-module/BSM1200D12P2C01s.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-recommendation">
+                        <div class="product-info">
+                            <h4>BSC750D65M1G001</h4>
+                            <p>650V/750A Silicon Carbide MOSFET</p>
+                            <div class="product-features">
+                                <span class="feature-tag">SiC Technology</span>
+                                <span class="feature-tag">High Frequency</span>
+                                <span class="feature-tag">Low Losses</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="/products/sic/BSC750D65M1G001.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                `;
+                
+                document.querySelector('.recommended-products').innerHTML = recommendedProducts;
+            });
+            
+            // Download results
+            document.getElementById('downloadResults').addEventListener('click', function() {
+                alert('In a real implementation, this would download a PDF with your product recommendations.');
+            });
+            
+            // Contact FAE
+            document.getElementById('contactFAE').addEventListener('click', function() {
+                window.location.href = '/contact-us/?inquiry=product-selection';
+            });
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+</body>
+</html>
