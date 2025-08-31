@@ -289,10 +289,28 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://bydsemi-distributor.com/news/technical/igbt-thermal-management.html</loc>
-        <lastmod>2025-08-15</lastmod>
+        <loc>https://bydsemi-distributor.com/about-us/team.html</loc>
+        <lastmod>2025-01-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/about-us/case-studies.html</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/support/technical-guides/</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bydsemi-distributor.com/support/technical-guides/inverter-design-igbt.html</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://bydsemi-distributor.com/about-us/</loc>

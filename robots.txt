@@ -31,6 +31,5 @@ Allow: /assets/js/
 Allow: /assets/images/
 
 # Additional sitemaps for different content types
-# Sitemap: https://bydsemi-distributor.com/sitemap-products.xml
-# Sitemap: https://bydsemi-distributor.com/sitemap-news.xml
-# Sitemap: https://bydsemi-distributor.com/sitemap-support.xml
+Sitemap: https://bydsemi-distributor.com/sitemap.xml
+Sitemap: https://bydsemi-distributor.com/sitemap-technical-guides.xml
