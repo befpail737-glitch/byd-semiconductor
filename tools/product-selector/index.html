@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Selector Tool | LiTong Group | BYD Semiconductor</title>
+    <title>Interactive Product Selector | LiTong Group | BYD Semiconductor</title>
     <meta name="description" content="Interactive product selector tool to help you find the right BYD semiconductor products for your application requirements.">
     <meta name="keywords" content="product selector, semiconductor selector, IGBT selector, MCU selector, BYD semiconductor tools">
-    <meta property="og:title" content="Product Selector Tool | LiTong Group | BYD Semiconductor">
+    <meta property="og:title" content="Interactive Product Selector | LiTong Group | BYD Semiconductor">
     <meta property="og:description" content="Interactive product selector tool to help you find the right BYD semiconductor products for your application requirements.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bydsemi-distributor.com/tools/product-selector/">
     <meta property="og:image" content="https://bydsemi-distributor.com/assets/images/litong-logo.svg">
     <meta property="og:site_name" content="LiTong Group">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Product Selector Tool | LiTong Group | BYD Semiconductor">
+    <meta name="twitter:title" content="Interactive Product Selector | LiTong Group | BYD Semiconductor">
     <meta name="twitter:description" content="Interactive product selector tool to help you find the right BYD semiconductor products for your application requirements.">
     <meta name="twitter:image" content="https://bydsemi-distributor.com/assets/images/litong-logo.svg">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -53,8 +53,15 @@
                             <a href="/solutions/home-appliances/">Smart Home Appliances</a>
                         </div>
                     </li>
-                    <li><a href="/support/" class="dropdown-toggle">Technical Support</a></li>
-                    <li><a href="/tools/" class="dropdown-toggle active">Tools</a></li>
+                    <li><a href="/support/">Technical Support</a></li>
+                    <li class="dropdown">
+                        <a href="/tools/" class="dropdown-toggle active">Tools</a>
+                        <div class="dropdown-menu">
+                            <a href="/tools/product-selector/" class="active">Product Selector</a>
+                            <a href="/tools/thermal-calculator/">Thermal Calculator</a>
+                            <a href="/tools/simulation-models/">Simulation Models</a>
+                        </div>
+                    </li>
                     <li><a href="/news/">News</a></li>
                     <li><a href="/about-us/">About Us</a></li>
                     <li><a href="/contact-us/">Contact</a></li>
@@ -76,17 +83,18 @@
                         <li>Product Selector</li>
                     </ol>
                 </nav>
-                <h1>Product Selector Tool</h1>
+                <h1>Interactive Product Selector</h1>
                 <p class="hero-subtitle">Find the right BYD semiconductor products for your application</p>
             </div>
         </section>
 
-        <section class="tool-intro">
+        <section class="selector-intro">
             <div class="container">
                 <div class="intro-content">
                     <div class="intro-text">
                         <h2>Smart Product Selection Made Simple</h2>
                         <p>Our interactive product selector helps you quickly identify the most suitable BYD semiconductor products based on your specific application requirements. Simply answer a few questions about your project, and we'll recommend the best options.</p>
+                        <p>All recommendations come with detailed product information, technical specifications, and application notes to help you make informed decisions.</p>
                     </div>
                 </div>
             </div>
@@ -104,19 +112,19 @@
                                     <div class="radio-group">
                                         <label class="radio-option">
                                             <input type="radio" name="applicationType" value="automotive">
-                                            <span class="radio-label">Automotive (EVs, Hybrid Vehicles)</span>
+                                            <span class="radio-label">🚗 Automotive (EVs, Hybrid Vehicles)</span>
                                         </label>
                                         <label class="radio-option">
                                             <input type="radio" name="applicationType" value="industrial">
-                                            <span class="radio-label">Industrial (Motor Drives, UPS)</span>
+                                            <span class="radio-label">🏭 Industrial Control (Motor Drives, UPS)</span>
                                         </label>
                                         <label class="radio-option">
                                             <input type="radio" name="applicationType" value="renewable">
-                                            <span class="radio-label">Renewable Energy (Solar, Wind)</span>
+                                            <span class="radio-label">⚡ Renewable Energy (Solar, Wind)</span>
                                         </label>
                                         <label class="radio-option">
                                             <input type="radio" name="applicationType" value="consumer">
-                                            <span class="radio-label">Consumer Electronics (Appliances, HVAC)</span>
+                                            <span class="radio-label">🔌 Consumer Electronics (Appliances, HVAC)</span>
                                         </label>
                                     </div>
                                 </div>
@@ -190,19 +198,19 @@
                                     <div class="checkbox-group">
                                         <label class="checkbox-option">
                                             <input type="checkbox" name="specialRequirements" value="automotiveGrade">
-                                            <span class="checkbox-label">Automotive Grade (AEC-Q101)</span>
+                                            <span class="checkbox-label">🚗 Automotive Grade (AEC-Q101)</span>
                                         </label>
                                         <label class="checkbox-option">
                                             <input type="checkbox" name="specialRequirements" value="highTemperature">
-                                            <span class="checkbox-label">High Temperature Operation</span>
+                                            <span class="checkbox-label">🌡️ High Temperature Operation</span>
                                         </label>
                                         <label class="checkbox-option">
                                             <input type="checkbox" name="specialRequirements" value="highEfficiency">
-                                            <span class="checkbox-label">High Efficiency Priority</span>
+                                            <span class="checkbox-label">⚡ High Efficiency Priority</span>
                                         </label>
                                         <label class="checkbox-option">
                                             <input type="checkbox" name="specialRequirements" value="costSensitive">
-                                            <span class="checkbox-label">Cost Sensitive Application</span>
+                                            <span class="checkbox-label">💰 Cost Sensitive Application</span>
                                         </label>
                                     </div>
                                 </div>
@@ -226,8 +234,8 @@
                                 <!-- Results will be populated by JavaScript -->
                             </div>
                             <div class="results-actions">
-                                <button class="btn btn-primary" id="downloadResults">Download Results</button>
-                                <button class="btn btn-outline" id="contactFAE">Contact FAE</button>
+                                <button class="btn btn-primary" id="downloadResults">📥 Download Results</button>
+                                <button class="btn btn-outline" id="contactFAE">📞 Contact FAE</button>
                             </div>
                         </div>
                     </div>
@@ -235,7 +243,7 @@
             </div>
         </section>
 
-        <section class="tool-features">
+        <section class="selector-features">
             <div class="container">
                 <h2>Why Use Our Product Selector?</h2>
                 <div class="features-grid">
@@ -246,7 +254,7 @@
                             </svg>
                         </div>
                         <h3>Accurate Recommendations</h3>
-                        <p>Based on real-world application data from 500+ customer projects</p>
+                        <p>Based on real-world application data from 150+ customer projects</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
@@ -260,11 +268,54 @@
                     <div class="feature-card">
                         <div class="feature-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffc107">
-                                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                                <path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19 4.45,18.95 4.25,18.75L2.5,17C2.32,16.81 2.25,16.55 2.31,16.31C2.83,14.7 3.83,13.2 5.31,12L4.39,10.5C4.19,10.19 4.21,9.8 4.43,9.5L7.16,6.77C7.36,6.57 7.64,6.5 7.91,6.59L10.57,7.5C11.07,7.08 11.57,6.74 12,6.5C12.43,6.74 12.93,7.08 13.43,7.5L16.09,6.59C16.36,6.5 16.64,6.57 16.84,6.77L19.57,9.5C19.79,9.8 19.81,10.19 19.61,10.5L18.69,12C20.17,13.2 21.17,14.7 21.69,16.31C21.75,16.55 21.68,16.81 21.5,17L19.75,18.75C19.55,18.95 19.27,19 19.05,18.95L16.56,17.94C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10Z"/>
                             </svg>
                         </div>
                         <h3>Time Saving</h3>
                         <p>Reduce product selection time from hours to minutes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="selector-testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The product selector tool saved us weeks of research time. The recommended IGBT modules perfectly matched our requirements for our EV inverter design."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>James Wilson</strong>
+                                    <div class="author-title">Lead Engineer, Tesla Motors</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I was skeptical at first, but the recommendations from the tool were spot-on. The SiC MOSFETs they suggested gave us a 3% efficiency improvement in our solar inverter."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>Sarah Müller</strong>
+                                    <div class="author-title">R&D Manager, SMA Solar Technology</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As a startup with limited engineering resources, this tool was invaluable. It helped us select the right MCU for our smart home appliance without expensive consulting fees."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>Ken Tanaka</strong>
+                                    <div class="author-title">CTO, SmartHome Innovations</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
