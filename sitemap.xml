@@ -235,6 +235,19 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <!-- Product Category Pages -->
+    <url>
+        <loc>https://byd-distributor.com/products/sic/</loc>
+        <lastmod>2025-04-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://byd-distributor.com/products/mcu/</loc>
+        <lastmod>2025-04-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
     <url>
         <loc>https://bydsemi-distributor.com/products/sic/BSC750D65M1G001.html</loc>
         <lastmod>2025-08-15</lastmod>
