@@ -1,0 +1,22 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#e8f5e8" stroke="#28a745" stroke-width="2"/>
+  
+  <!-- Certificate/Award shape -->
+  <rect x="15" y="12" width="30" height="36" rx="3" fill="#28a745"/>
+  <rect x="17" y="14" width="26" height="32" rx="2" fill="#fff"/>
+  
+  <!-- Award ribbon -->
+  <polygon points="20,40 25,45 30,40 35,45 40,40 40,55 30,50 20,55" fill="#dc3545"/>
+  
+  <!-- Checkmark -->
+  <path d="M22 25 L28 31 L38 21" stroke="#28a745" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Official stamp -->
+  <circle cx="35" cy="22" r="4" fill="#0066cc" opacity="0.7"/>
+  <text x="35" y="24" text-anchor="middle" font-size="4" fill="#fff" font-weight="bold">✓</text>
+  
+  <!-- Document lines -->
+  <line x1="22" y1="35" x2="38" y2="35" stroke="#ccc" stroke-width="1"/>
+  <line x1="22" y1="38" x2="35" y2="38" stroke="#ccc" stroke-width="1"/>
+</svg>

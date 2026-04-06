@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <!-- Background -->
+  <rect width="200" height="50" fill="#ffffff" stroke="#e9ecef" stroke-width="1" rx="4"/>
+  
+  <!-- Core-Tek Brand -->
+  <g transform="translate(10, 10)">
+    <!-- Icon -->
+    <circle cx="15" cy="15" r="12" fill="#0066cc" opacity="0.1"/>
+    <circle cx="15" cy="15" r="8" fill="none" stroke="#0066cc" stroke-width="2"/>
+    <path d="M11 15 L15 19 L19 11" fill="none" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Company Name -->
+    <text x="35" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Core-Tek</text>
+    <text x="35" y="32" font-family="Arial, sans-serif" font-size="8" fill="#666">BYD Semiconductor Distributor</text>
+  </g>
+  
+  <!-- BYD Partner Badge -->
+  <g transform="translate(150, 15)">
+    <rect width="35" height="20" rx="3" fill="#0066cc" opacity="0.1"/>
+    <text x="167.5" y="28" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0066cc" text-anchor="middle">BYD</text>
+    <text x="167.5" y="38" font-family="Arial, sans-serif" font-size="6" fill="#666" text-anchor="middle">AUTHORIZED</text>
+  </g>
+</svg>

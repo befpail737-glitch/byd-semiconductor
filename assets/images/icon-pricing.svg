@@ -1,0 +1,30 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#f0f8ff" stroke="#0066cc" stroke-width="2"/>
+  
+  <!-- Price tag -->
+  <path d="M15 20 L35 20 Q40 20 40 25 L40 35 Q40 40 35 40 L25 40 L15 30 Z" fill="#0066cc"/>
+  <circle cx="18" cy="25" r="2" fill="#fff"/>
+  
+  <!-- Dollar sign -->
+  <text x="32" y="34" font-size="16" fill="#fff" font-weight="bold">$</text>
+  
+  <!-- Competitive pricing arrows -->
+  <g stroke="#28a745" stroke-width="2" fill="none">
+    <path d="M45 15 L45 25" stroke-linecap="round"/>
+    <path d="M42 18 L45 15 L48 18" stroke-linecap="round"/>
+    <text x="45" y="12" text-anchor="middle" font-size="8" fill="#28a745" font-weight="bold">▼</text>
+  </g>
+  
+  <!-- Value indicators -->
+  <circle cx="45" cy="35" r="8" fill="#28a745" opacity="0.1"/>
+  <circle cx="45" cy="35" r="5" fill="#28a745" opacity="0.2"/>
+  <text x="45" y="38" text-anchor="middle" font-size="8" fill="#28a745" font-weight="bold">BEST</text>
+  
+  <!-- Cost savings -->
+  <rect x="12" y="42" width="16" height="6" rx="3" fill="#28a745"/>
+  <text x="20" y="46" text-anchor="middle" font-size="6" fill="#fff" font-weight="bold">SAVE</text>
+  
+  <!-- Percentage -->
+  <text x="50" y="50" font-size="10" fill="#28a745" font-weight="bold">-20%</text>
+</svg>
